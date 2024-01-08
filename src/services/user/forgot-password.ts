@@ -28,6 +28,7 @@ export const forgotPasswordService = async (email: string) => {
         })
 
         sendMail(email, 'Reset your password', `To reset your password, click here: http://localhost:3000/reset-password/${resetToken}`)
+        console.log(resetToken)
 
         return user
     } catch (error) {
