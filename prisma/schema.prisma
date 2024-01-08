@@ -16,5 +16,7 @@ model User {
   name    String
   phone   String
   password String
+  resetToken String?
+  resetExpiry DateTime?
 
 }

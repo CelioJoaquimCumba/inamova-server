@@ -1,10 +1,10 @@
 import { PrismaClient } from '@prisma/client'
 import { createHash } from 'crypto'
-import { user } from '../models/user.model.js'
+import { user } from '../../models/user.model.js'
 
 const prisma = new PrismaClient()
 
-export const createUserService = async ( email, password, phone, name ) => {
+export const registerService = async ( email, password, phone, name ) => {
     const hashedPassword = createHash('sha256').update(password).digest('hex')
     try {
         await prisma.$connect()

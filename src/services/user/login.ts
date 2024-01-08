@@ -3,7 +3,7 @@ import { createHash } from "crypto"
 import jwt from "jsonwebtoken"
 
 const prisma = new PrismaClient()
-export const loginUserService = async (email: string, password: string) => {
+export const loginService = async (email: string, password: string) => {
     const hashedPassword = createHash('sha256').update(password).digest('hex')
     try {
         await prisma.$connect()
