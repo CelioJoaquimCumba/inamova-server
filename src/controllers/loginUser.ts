@@ -6,9 +6,9 @@ export const loginUser = async (req, res) => {
         return res.status(400).json({ message: 'All fields are required' })
     }
     try {
-        await loginUserService(email, password)
+        const token = await loginUserService(email, password)
+        return res.status(200).json(token)
     } catch (error) {
         return res.status(500).json({ message: error.message })
     }
-    return res.status(200).json({ message: 'User logged in successfully' })
 }
