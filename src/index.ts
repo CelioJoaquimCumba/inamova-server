@@ -4,8 +4,11 @@ import bodyParser from "body-parser"
 import { userRouter } from './routes/userRoutes.js'
 import { testRouter } from "./routes/testRoute.js"
 import errorHandler from "./middleware/errorHandler.js"
+import cors from "cors"
 
 const app = express()
+
+app.use(cors({origin: true, credentials: true}))
 
 app.use(bodyParser.urlencoded({ extended: false }))
 
