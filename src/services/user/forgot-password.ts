@@ -1,7 +1,8 @@
 import { PrismaClient } from "@prisma/client"
-import { badRequestError } from "../../errors/BadRequest.js"
+import { BadRequestError } from "../../errors/BadRequest.js"
 import { generateResetToken } from "../../utils/generateResetToken.js"
 import { sendMail } from "../../utils/sendMail.js"
+import { InternalServerError } from "../../errors/InternalServer.js"
 
 
 const prisma = new PrismaClient()
@@ -11,7 +12,7 @@ export const forgotPasswordService = async (email: string) => {
         await prisma.$connect()
         const user = await prisma.user.findFirst({ where: { email } })
         if( !user ) {
-            throw badRequestError('User not found')
+            throw BadRequestError('User not found')
         }
         const resetToken = generateResetToken()
         const resetExpiry = new Date()
@@ -32,7 +33,7 @@ export const forgotPasswordService = async (email: string) => {
 
         return user
     } catch (error) {
-        throw error
+        throw InternalServerError(error.message)
     } finally {
         await prisma.$disconnect()
     }

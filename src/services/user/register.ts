@@ -2,6 +2,8 @@ import { PrismaClient } from '@prisma/client'
 import { createHash } from 'crypto'
 import { user } from '../../models/user.model.js'
 import { generateHash } from '../../utils/generateHash.js'
+import { BadRequestError } from '../../errors/BadRequest.js'
+import { InternalServerError } from '../../errors/InternalServer.js'
 
 const prisma = new PrismaClient()
 
@@ -10,7 +12,7 @@ export const registerService = async ( email, password, phone, name ) => {
     try {
         await prisma.$connect()
         if (await prisma.user.findFirst({ where: { email } })) {
-            throw new Error('User already exists')
+            throw BadRequestError('User already exists')
         }
 
         const user: user = await prisma.user.create({
@@ -24,7 +26,7 @@ export const registerService = async ( email, password, phone, name ) => {
 
         return { id: user.id, name: user.name}
     } catch (error) {
-        throw error
+        throw InternalServerError(error.message)
     } finally {
         await prisma.$disconnect()
     }
