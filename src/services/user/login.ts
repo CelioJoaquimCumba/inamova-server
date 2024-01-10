@@ -13,8 +13,9 @@ export const loginService = async (email: string, password: string) => {
         if (!user) {
             throw BadRequestError('Invalid email or password')
         }
+        const username = user.name
         const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET_KEY , { expiresIn: process.env.JWT_EXPIRES })
-        return token
+        return {username, token}
     } catch (error) {
         throw InternalServerError(error.message)
     } finally {

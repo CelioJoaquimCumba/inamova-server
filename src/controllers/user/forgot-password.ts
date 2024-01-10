@@ -3,7 +3,7 @@ import { EmailValidation } from "../../validations/index.js"
 
 
 export const forgotPassword = async (req, res) => {
-    const { email } = req.body
+    const { email }: { email: string } = req.body
     if (!email) {
         return res.status(400).json({ message: 'All fields are required' })
     }
@@ -11,7 +11,7 @@ export const forgotPassword = async (req, res) => {
         return res.status(400).json({ message: 'Invalid email' })
     }
     try {
-        await forgotPasswordService(email)
+        await forgotPasswordService(email.toLocaleLowerCase())
         return res.status(200).json({ message: 'Email sent' })
     } catch (error) {
         return res.status(error.statusCode || 500).json({ message: error.message })

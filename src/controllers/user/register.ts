@@ -2,7 +2,7 @@ import { registerService } from "../../services/user/register.js"
 import { EmailValidation, PasswordValidation, PhoneValidation, NameValidation } from "../../validations/index.js"
 
 export const register = async (req, res) => {
-    const { email, password, phone, name } = req.body
+    const { email, password, phone, name } : { email: string, password: string, phone: string, name: string} = req.body
     if (!email || !password || !phone || !name) {
         return res.status(400).json({ message: 'All fields are required' })
     }
@@ -19,7 +19,7 @@ export const register = async (req, res) => {
         return res.status(400).json({ message: 'Invalid phone number' })
     }
     try {
-        const user = await registerService(email, password, phone, name)
+        const user = await registerService(email.toLowerCase(), password, phone, name)
         return res.status(201).json(user)
     } catch (error) {
         return res.status(500).json({ message: error.message })
