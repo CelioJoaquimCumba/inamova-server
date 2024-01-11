@@ -1,5 +1,5 @@
 import { PrismaClient } from '@prisma/client'
-import { createHash } from 'crypto'
+import jwt from "jsonwebtoken"
 import { user } from '../../models/user.model.js'
 import { generateHash } from '../../utils/generateHash.js'
 import { BadRequestError } from '../../errors/BadRequest.js'
@@ -23,8 +23,8 @@ export const registerService = async ( email, password, phone, name ) => {
                 name
             }
         })
-
-        return { id: user.id, name: user.name}
+        const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET_KEY , { expiresIn: process.env.JWT_EXPIRES })
+        return {username: name, token}
     } catch (error) {
         throw InternalServerError(error.message)
     } finally {

@@ -19,8 +19,8 @@ export const register = async (req, res) => {
         return res.status(400).json({ message: 'Invalid phone number' })
     }
     try {
-        const user = await registerService(email.toLowerCase(), password, phone, name)
-        return res.status(201).json(user)
+        const {username, token} = await registerService(email.toLowerCase(), password, phone, name)
+        return res.status(201).json({username, token})
     } catch (error) {
         return res.status(500).json({ message: error.message })
     }
