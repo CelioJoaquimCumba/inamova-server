@@ -7,7 +7,7 @@ import { InternalServerError } from "../../errors/InternalServer.js"
 
 const prisma = new PrismaClient()
 
-export const forgotPasswordService = async (email: string) => {
+export const forgotPasswordService = async (email: string): Promise<void> => {
     try {
         await prisma.$connect()
         const user = await prisma.user.findFirst({ where: { email } })
@@ -28,10 +28,9 @@ export const forgotPasswordService = async (email: string) => {
             }
         })
 
-        sendMail(email, 'Reset your password', `To reset your password, click here: http://localhost:3000/reset-password/${resetToken}`)
-        console.log(resetToken)
-
-        return user
+        sendMail(email, 'Reset your password', `To reset your password, click here: ${process.env.SITE_URL}/reset-password/${resetToken}`)
+        
+        // const response = "Email was sent to "+user.email
     } catch (error) {
         throw InternalServerError(error.message)
     } finally {

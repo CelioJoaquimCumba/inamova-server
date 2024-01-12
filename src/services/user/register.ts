@@ -7,7 +7,7 @@ import { InternalServerError } from '../../errors/InternalServer.js'
 
 const prisma = new PrismaClient()
 
-export const registerService = async ( email, password, phone, name ) => {
+export const registerService = async ( email: string, password: string, phone: string, name: string ): Promise<{username: string, token:string}> => {
     const hashedPassword = generateHash(password)
     try {
         await prisma.$connect()

@@ -5,7 +5,7 @@ import { BadRequestError } from "../../errors/BadRequest.js"
 import { InternalServerError } from "../../errors/InternalServer.js"
 
 const prisma = new PrismaClient()
-export const loginService = async (email: string, password: string) => {
+export const loginService = async (email: string, password: string): Promise<{username:string, token: string}> => {
     const hashedPassword = createHash('sha256').update(password).digest('hex')
     try {
         await prisma.$connect()

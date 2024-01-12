@@ -5,7 +5,7 @@ import { generateHash } from "../../utils/generateHash.js";
 import { InternalServerError } from "../../errors/InternalServer.js";
 
 const prisma = new PrismaClient()
-export const changePasswordService = async (token: string, password: string, email: string) => {
+export const changePasswordService = async (token: string, password: string, email: string): Promise<void> => {
 try {
     const user = await prisma.user.findUnique({ where: { email } });
 
