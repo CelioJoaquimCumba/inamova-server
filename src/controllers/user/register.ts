@@ -1,7 +1,8 @@
 import { registerService } from "../../services/user/register.js"
 import { EmailValidation, PasswordValidation, PhoneValidation, NameValidation } from "../../validations/index.js"
+import { Request, Response } from "express"
 
-export const register = async (req, res) => {
+export const register = async (req: Request, res: Response) => {
     const { email, password, phone, name } : { email: string, password: string, phone: string, name: string} = req.body
     if (!email || !password || !phone || !name) {
         return res.status(400).json({ message: 'All fields are required' })

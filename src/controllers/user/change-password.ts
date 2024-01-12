@@ -1,8 +1,8 @@
 import { changePasswordService } from "../../services/user/change-password.js"
 import { EmailValidation, PasswordValidation } from "../../validations/index.js"
+import { Request, Response } from "express"
 
-
-export const changePassword = async (req, res) => {
+export const changePassword = async (req: Request, res: Response) => {
     const { email, token, password }: { email: string, token: string, password: string } = req.body
     if (!token || !password || !email) {
         return res.status(400).json({ message: 'All fields are required' })
