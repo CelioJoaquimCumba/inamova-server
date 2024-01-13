@@ -1,6 +1,6 @@
 import { PrismaClient } from '@prisma/client'
 import jwt from "jsonwebtoken"
-import { user } from '../../models/user.model.js'
+import { User } from '../../models/user.model.js'
 import { generateHash } from '../../utils/generateHash.js'
 import { BadRequestError } from '../../errors/BadRequest.js'
 import { InternalServerError } from '../../errors/InternalServer.js'
@@ -15,7 +15,7 @@ export const registerService = async ( email: string, password: string, phone: s
             throw BadRequestError('User already exists')
         }
 
-        const user: user = await prisma.user.create({
+        const user: User = await prisma.user.create({
             data: {
                 email,
                 password: hashedPassword,
