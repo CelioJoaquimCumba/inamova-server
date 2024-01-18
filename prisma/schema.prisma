@@ -22,8 +22,43 @@ model User {
   resetExpiry DateTime?
   quizzes UserQuiz[]
   results Result[]
+  subjects UserSubject[]
+}
+
+model Subject {
+  id String @id @default(uuid())
+  title String
+  thumbnail String
+  description String
+
+  users UserSubject[]
+  lessons Lesson[]
 
 }
+
+model UserSubject {
+  id String @id @default(uuid())
+
+  userId String
+  user User @relation(fields: [userId], references: [id])
+
+  subjectId String
+  subject Subject @relation(fields: [subjectId], references: [id])
+}
+
+model Lesson {
+  id String @id @default(uuid())
+
+  title String
+  thumbnail String
+  time Decimal
+
+  subjectId String
+  Subject Subject @relation(fields: [subjectId], references: [id])
+
+}
+
+
 
 model Quiz {
   id String @id @default(uuid())
@@ -62,7 +97,6 @@ model Result {
 
   quizId String
   quiz Quiz @relation(fields: [quizId], references: [id])
-
 }
 
 model UserQuiz {
