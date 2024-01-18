@@ -1,5 +1,5 @@
 import { forgotPasswordService } from "../../services/user/forgot-password.js"
-import { EmailValidation } from "../../validations/index.js"
+import { EmailValidation } from "../../validations/user/index.js"
 import { Request, Response } from "express"
 
 export const forgotPassword = async (req: Request, res: Response) => {

@@ -1,5 +1,5 @@
 import { registerService } from "../../services/user/register.js"
-import { EmailValidation, PasswordValidation, PhoneValidation, NameValidation } from "../../validations/index.js"
+import { EmailValidation, PasswordValidation, PhoneValidation, NameValidation } from "../../validations/user/index.js"
 import { Request, Response } from "express"
 
 export const register = async (req: Request, res: Response) => {

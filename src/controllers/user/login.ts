@@ -1,5 +1,5 @@
 import { loginService } from "../../services/user/login.js"
-import { EmailValidation } from "../../validations/index.js"
+import { EmailValidation } from "../../validations/user/index.js"
 import { Request, Response } from "express"
 
 

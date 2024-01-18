@@ -13,12 +13,72 @@ datasource db {
 }
 
 model User {
-  id      Int      @id @default(autoincrement())
+  id      String      @id @default(uuid())
   email   String   @unique
   name    String
   phone   String
   password String
   resetToken String?
   resetExpiry DateTime?
+  quizzes UserQuiz[]
+  results Result[]
 
+}
+
+model Quiz {
+  id String @id @default(uuid())
+  title String
+  description String
+  thumbnail String
+  passingPercentage Decimal? @default(72)
+  questions QuizQuestion[]
+  userQuizzes UserQuiz[]
+  results Result[]
+}
+
+model Question {
+  id String @id @default(uuid())
+  content String
+  image String?
+  quizzes QuizQuestion[]
+  options Option[] @relation("questionOptions")
+}
+
+model Option {
+  id String @id @default(uuid())
+  content String
+  questionId String
+  isCorrect Boolean
+  question Question @relation("questionOptions", fields: [questionId], references: [id])
+}
+
+
+model Result {
+  id String @id @default(uuid())
+  score Int 
+  total Int @default(25)
+  userId String
+  user User @relation(fields: [userId], references: [id])
+
+  quizId String
+  quiz Quiz @relation(fields: [quizId], references: [id])
+
+}
+
+model UserQuiz {
+  id String @id @default(uuid())
+  userId String
+  quizId String
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+  quiz Quiz @relation(fields: [quizId], references: [id])
+}
+model QuizQuestion {
+  id String @id @default(uuid())
+  quizId String
+  questionId String
+
+  quiz Quiz @relation(fields: [quizId], references: [id])
+  question Question @relation(fields: [questionId], references: [id])
 }

@@ -3,6 +3,7 @@ import authMiddleware from "../middleware/authMiddleWare.js";
 
 export const testRouter = Router()
 
-testRouter.get("/",authMiddleware, (req, res) => {
+testRouter.use(authMiddleware)
+testRouter.get("/", (req, res) => {
     res.status(200).json({ message: "Test route" })
 })

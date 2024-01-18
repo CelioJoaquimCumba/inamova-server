@@ -1,5 +1,5 @@
 import { changePasswordService } from "../../services/user/change-password.js"
-import { EmailValidation, PasswordValidation } from "../../validations/index.js"
+import { EmailValidation, PasswordValidation } from "../../validations/user/index.js"
 import { Request, Response } from "express"
 
 export const changePassword = async (req: Request, res: Response) => {
