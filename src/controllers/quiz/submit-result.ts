@@ -1,5 +1,5 @@
 import { Request, Response } from "express"
-import { validateSubmission } from "../../validations/quiz/submitionValidation.js"
+import { validateSubmission } from "../../validations/quiz/submissionValidation.js"
 import { submitResultService } from "../../services/quiz/submit-result.js"
 export const submitResult = async (req: Request, res: Response) => {
     try {
