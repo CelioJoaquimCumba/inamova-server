@@ -5,14 +5,21 @@ import { BadRequestError } from "../../errors/BadRequest.js";
 const prisma = new PrismaClient()
 export const validateTokenService = async( token: string) : Promise<boolean> => {
     try{
-        const decoded = jwt.verify(token, process.env.JWT_SECRET_KEY)
-        if(decoded) {
-            return true
-        } else {
-            return false
+        await prisma.$connect()
+        const decoded = jwt.verify(token, process.env.JWT_SECRET_KEY) as { id: string }
+        if(!decoded) {
+            throw BadRequestError('Invalid token')
         }
+        const user = await prisma.user.findUnique({ where: { id: decoded.id } })
+        if(!user) {
+            throw BadRequestError('User not found')
+        }
+
+        return true
 
     } catch(e) {
         throw BadRequestError(e.message)
+    } finally {
+        await prisma.$disconnect()
     }
 }

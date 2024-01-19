@@ -10,7 +10,7 @@ export const validateToken = async ( req: Request, res: Response) => {
         }
         const isValid = await validateTokenService(token)
 
-        return res.status(200).json({ isValid })
+        return res.status(200).json(isValid)
     } catch(error) {
         return res.status(error.statusCode || 500).json({ message: error.message })
     }
