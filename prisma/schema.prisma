@@ -23,6 +23,9 @@ model User {
   quizzes UserQuiz[]
   results Result[]
   subjects UserSubject[]
+  madeQuizzes Int @default(0)
+  averageScore Decimal @default(0)
+  passedQuizzes Int @default(0)
 }
 
 model Subject {
@@ -93,6 +96,7 @@ model Result {
   id String @id @default(uuid())
   score Int 
   total Int @default(25)
+  passed Boolean @default(true)
   userId String
   user User @relation(fields: [userId], references: [id])
 

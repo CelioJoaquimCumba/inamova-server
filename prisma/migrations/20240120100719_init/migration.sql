@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "User" ADD COLUMN     "averageScore" DECIMAL(65,30) NOT NULL DEFAULT 0,
+ADD COLUMN     "madeQuizzes" INTEGER NOT NULL DEFAULT 0,
+ADD COLUMN     "passedQuizzes" INTEGER NOT NULL DEFAULT 0;
