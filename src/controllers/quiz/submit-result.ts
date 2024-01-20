@@ -11,7 +11,6 @@ export const submitResult = async (req: Request, res: Response) => {
 
 
         await submitResultService(quizId, score, total, userId)
-        
         return res.status(200).json({ message: 'Result submitted successfully' })
     } catch (error) {
         return res.status(error.statusCode || 500).json({ message: error.message })

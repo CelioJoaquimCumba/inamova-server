@@ -74,6 +74,7 @@ model Quiz {
 model Question {
   id String @id @default(uuid())
   content String
+  explanation String
   image String?
   quizzes QuizQuestion[]
   options Option[] @relation("questionOptions")
