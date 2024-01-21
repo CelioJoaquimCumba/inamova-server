@@ -9,7 +9,7 @@ type Submition = {
 
 export const validateSubmission = ({score, total, userId, quizId}: Submition) : Boolean => {
     try {
-        if( !score || !total || !userId || !quizId) {
+        if( (!score && score!==0) || !total || !userId || !quizId) {
             throw BadRequestError('All fields are required')
         }
         if (score > total) {
