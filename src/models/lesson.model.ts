@@ -5,4 +5,5 @@ export type Lesson = {
     title: string
     thumbnail: string
     time: Decimal
+    subjectId:string
 }
