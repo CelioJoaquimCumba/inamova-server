@@ -16,5 +16,6 @@ export const getQuiz = async (req: Request, res: Response) => {
         res.status(200).send(quiz)
     } catch(e) {
         res.status(e.statusCode || 500).send({message: e.message})
+        console.log(e.message)
     }
 }
