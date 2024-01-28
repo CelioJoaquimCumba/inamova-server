@@ -1,11 +1,15 @@
 {
   "name": "inamova-server",
   "version": "1.0.0",
+  "prisma": {
+    "seed": "ts-node prisma/seed"
+  },
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "npx tsx src/index.ts"
   },
   "keywords": [],
   "author": "",
