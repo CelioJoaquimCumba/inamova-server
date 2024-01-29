@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+
 import { validateTokenService } from "../../services/user/validate-token.js";
 
 export const validateToken = async ( req: Request, res: Response) => {
