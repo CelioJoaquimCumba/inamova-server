@@ -361,38 +361,6 @@ async function main() {
 		// Add more question objects with options...
 	];
 
-	await prisma.subject.create({
-		data: {
-			title: "Mathematics",
-			thumbnail: "math_thumbnail_url",
-			description: "Study of numbers and quantities.",
-		},
-	});
-
-	await prisma.subject.create({
-		data: {
-			title: "Science",
-			thumbnail: "science_thumbnail_url",
-			description: "Study of the natural world.",
-		},
-	});
-
-	await prisma.subject.create({
-		data: {
-			title: "History",
-			thumbnail: "history_thumbnail_url",
-			description: "Study of past events and civilizations.",
-		},
-	});
-
-	await prisma.subject.create({
-		data: {
-			title: "English Literature",
-			thumbnail: "literature_thumbnail_url",
-			description: "Study of written works in the English language.",
-		},
-	});
-
 	// Create questions and associate them with the quiz
 	const createdQuestions = await Promise.all(
 		questionData.map(async (qData) => {
@@ -424,133 +392,218 @@ async function main() {
 		})
 	);
 
-	// // Seed data for Lesson model
-	await prisma.lesson.create({
-		data: {
-			title: "Introduction to Algebra",
-			thumbnail: "algebra_thumbnail_url",
-			time: 2.5,
-			subjectId: "91c29738-c1d7-469e-9ce5-6eb5ec80da9d",
-		},
-	});
+	await prisma.subject.createMany({
+		data: [
+		  {
+			title: "Sinais de trânsito e sua interpretação",
+			thumbnail: "url_da_imagem_para_sinais_de_transito",
+			description: "Interpretação e compreensão dos diferentes sinais de trânsito e sua aplicação nas estradas.",
+		  },
+		  {
+			title: "Regras de prioridade e direito de passagem",
+			thumbnail: "url_da_imagem_para_prioridade_e_direito_de_passagem",
+			description: "Entendimento das regras que determinam a prioridade entre veículos e pedestres em diferentes situações de trânsito.",
+		  },
+		  {
+			title: "Limites de velocidade e sua aplicação",
+			thumbnail: "url_da_imagem_para_limites_de_velocidade",
+			description: "Conhecimento e respeito aos limites de velocidade estabelecidos para garantir a segurança no trânsito.",
+		  },
+		  {
+			title: "Regras de ultrapassagem e mudança de faixa",
+			thumbnail: "url_da_imagem_para_ultrapassagem_e_mudanca_de_faixa",
+			description: "Procedimentos seguros para realizar ultrapassagens e mudanças de faixa com responsabilidade e respeito às normas de trânsito.",
+		  },
+		  {
+			title: "Uso adequado de dispositivos de segurança",
+			thumbnail: "url_da_imagem_para_dispositivos_de_seguranca",
+			description: "Correta utilização de dispositivos de segurança, como cintos de segurança e assentos infantis, para proteger ocupantes do veículo.",
+		  },
+		  {
+			title: "Proibição de dirigir sob a influência de álcool ou drogas",
+			thumbnail: "url_da_imagem_para_proibicao_de_dirigir_alcool_drogas",
+			description: "Conscientização sobre os perigos e consequências legais de dirigir sob a influência de álcool ou drogas.",
+		  },
+		  {
+			title: "Regulamentos sobre uso de telefone celular e outras distrações ao volante",
+			thumbnail: "url_da_imagem_para_regulamentos_de_uso_de_celular",
+			description: "Normas e penalidades relacionadas ao uso de telefone celular e outras distrações ao volante que podem aumentar o risco de acidentes.",
+		  },
+		  {
+			title: "Sinalização e manobras corretas em cruzamentos e rotatórias",
+			thumbnail: "url_da_imagem_para_sinalizacao_em_cruzamentos_rotatorias",
+			description: "Procedimentos corretos para sinalização e realização de manobras em cruzamentos e rotatórias, visando à fluidez e segurança do tráfego.",
+		  },
+		  {
+			title: "Regras específicas para ciclistas e pedestres",
+			thumbnail: "url_da_imagem_para_regras_para_ciclistas_e_pedestres",
+			description: "Direitos e deveres de ciclistas e pedestres no trânsito, visando à convivência segura e harmoniosa com os demais usuários da via.",
+		  },
+		  {
+			title: "Uso adequado de luzes e indicadores",
+			thumbnail: "url_da_imagem_para_uso_de_luzes_e_indicadores",
+			description: "Correta utilização de luzes e indicadores para sinalizar intenções e garantir a visibilidade do veículo em diferentes condições de iluminação.",
+		  },
+		  {
+			title: "Regulamentações para veículos de emergência e prioridade de passagem",
+			thumbnail: "url_da_imagem_para_veiculos_de_emergencia",
+			description: "Normas e procedimentos relacionados ao trânsito de veículos de emergência, garantindo-lhes prioridade de passagem em situações de urgência.",
+		  },
+		  {
+			title: "Condições de tráfego adversas e como adaptar a condução a elas",
+			thumbnail: "url_da_imagem_para_condicoes_de_trafego_adversas",
+			description: "Precauções e técnicas de condução segura em condições adversas de tráfego, como chuva, neblina, neve e estradas escorregadias.",
+		  },
+		  {
+			title: "Regulamentos sobre carga e segurança de carga em veículos comerciais",
+			thumbnail: "url_da_imagem_para_regulamentos_de_carga",
+			description: "Normas e diretrizes para o transporte seguro e adequado de carga em veículos comerciais, visando à prevenção de acidentes e danos.",
+		  },
+		  {
+			title: "Penalidades por infrações de trânsito e procedimentos de contestação",
+			thumbnail: "url_da_imagem_para_penalidades_por_infracoes",
+			description: "Consequências legais e procedimentos para contestação de infrações de trânsito, visando à justiça e aplicação equitativa da lei.",
+		  },
+		  {
+			title: "Procedimentos em caso de acidentes de trânsito e responsabilidades legais",
+			thumbnail: "url_da_imagem_para_procedimentos_em_acidentes",
+			description: "Instruções e obrigações legais em caso de envolvimento em acidentes de trânsito, visando à segurança dos envolvidos e a conformidade com a lei.",
+		  },
+		],
+	  });
 
-	await prisma.lesson.create({
-		data: {
-			title: "Chemical Reactions",
-			thumbnail: "chemistry_thumbnail_url",
-			time: 3.0,
-			subjectId: "e5ebe355-a5a6-4aec-ac4e-e88dfe520f4d",
-		},
-	});
+	// Array dos tópicos já existentes
+	// const subjects = [
+	// 	{
+	// 		id: "cfa8c1f0-3f55-4acf-9854-4440511cbc35",
+	// 		title: "Sinais de trânsito e sua interpretação",
+	// 		thumbnail: "url_da_imagem_para_sinais_de_transito",
+	// 		description:
+	// 			"Interpretação e compreensão dos diferentes sinais de trânsito e sua aplicação nas estradas.",
+	// 	},
+	// 	{
+	// 		id: "b7cd8975-8b52-42fa-97f5-bc0dd3555c06",
+	// 		title: "Regras de prioridade e direito de passagem",
+	// 		thumbnail: "url_da_imagem_para_prioridade_e_direito_de_passagem",
+	// 		description:
+	// 			"Entendimento das regras que determinam a prioridade entre veículos e pedestres em diferentes situações de trânsito.",
+	// 	},
+	// 	{
+	// 		id: "0ad93079-da3b-4b87-980e-711fa7827d74",
+	// 		title: "Limites de velocidade e sua aplicação",
+	// 		thumbnail: "url_da_imagem_para_limites_de_velocidade",
+	// 		description:
+	// 			"Conhecimento e respeito aos limites de velocidade estabelecidos para garantir a segurança no trânsito.",
+	// 	},
+	// 	{
+	// 		id: "a939cc79-6295-4272-b0be-15fcb1ca75d6",
+	// 		title: "Regras de ultrapassagem e mudança de faixa",
+	// 		thumbnail: "url_da_imagem_para_ultrapassagem_e_mudanca_de_faixa",
+	// 		description:
+	// 			"Procedimentos seguros para realizar ultrapassagens e mudanças de faixa com responsabilidade e respeito às normas de trânsito.",
+	// 	},
+	// 	{
+	// 		id: "87ba6800-cfca-4e0a-8c93-d8373f56ac9c",
+	// 		title: "Uso adequado de dispositivos de segurança",
+	// 		thumbnail: "url_da_imagem_para_dispositivos_de_seguranca",
+	// 		description:
+	// 			"Correta utilização de dispositivos de segurança, como cintos de segurança e assentos infantis, para proteger ocupantes do veículo.",
+	// 	},
+	// 	{
+	// 		id: "ec68341d-9894-40ea-8fa0-a7c7610defce",
+	// 		title: "Proibição de dirigir sob a influência de álcool ou drogas",
+	// 		thumbnail: "url_da_imagem_para_proibicao_de_dirigir_alcool_drogas",
+	// 		description:
+	// 			"Conscientização sobre os perigos e consequências legais de dirigir sob a influência de álcool ou drogas.",
+	// 	},
+	// 	{
+	// 		id: "ddcc70d8-7372-4da9-b4b6-01a8fae7418c",
+	// 		title:
+	// 			"Regulamentos sobre uso de telefone celular e outras distrações ao volante",
+	// 		thumbnail: "url_da_imagem_para_regulamentos_de_uso_de_celular",
+	// 		description:
+	// 			"Normas e penalidades relacionadas ao uso de telefone celular e outras distrações ao volante que podem aumentar o risco de acidentes.",
+	// 	},
+	// 	{
+	// 		id: "af6ee835-09b7-451b-a7ba-5261dcf073ba",
+	// 		title: "Sinalização e manobras corretas em cruzamentos e rotatórias",
+	// 		thumbnail: "url_da_imagem_para_sinalizacao_em_cruzamentos_rotatorias",
+	// 		description:
+	// 			"Procedimentos corretos para sinalização e realização de manobras em cruzamentos e rotatórias, visando à fluidez e segurança do tráfego.",
+	// 	},
+	// 	{
+	// 		id: "be8c09a7-6143-4ab2-afc7-a15fc2a29590",
+	// 		title: "Regras específicas para ciclistas e pedestres",
+	// 		thumbnail: "url_da_imagem_para_regras_para_ciclistas_e_pedestres",
+	// 		description:
+	// 			"Direitos e deveres de ciclistas e pedestres no trânsito, visando à convivência segura e harmoniosa com os demais usuários da via.",
+	// 	},
+	// 	{
+	// 		id: "6132973f-0dd0-4fbb-8613-af580d2762a9",
+	// 		title: "Uso adequado de luzes e indicadores",
+	// 		thumbnail: "url_da_imagem_para_uso_de_luzes_e_indicadores",
+	// 		description:
+	// 			"Correta utilização de luzes e indicadores para sinalizar intenções e garantir a visibilidade do veículo em diferentes condições de iluminação.",
+	// 	},
+	// 	{
+	// 		id: "eebf8202-f508-45ef-a2ed-3a4ec68bb604",
+	// 		title:
+	// 			"Regulamentações para veículos de emergência e prioridade de passagem",
+	// 		thumbnail: "url_da_imagem_para_veiculos_de_emergencia",
+	// 		description:
+	// 			"Normas e procedimentos relacionados ao trânsito de veículos de emergência, garantindo-lhes prioridade de passagem em situações de urgência.",
+	// 	},
+	// 	{
+	// 		id: "2491e447-d2ac-4199-af87-d3d8a44dcc8f",
+	// 		title: "Condições de tráfego adversas e como adaptar a condução a elas",
+	// 		thumbnail: "url_da_imagem_para_condicoes_de_trafego_adversas",
+	// 		description:
+	// 			"Precauções e técnicas de condução segura em condições adversas de tráfego, como chuva, neblina, neve e estradas escorregadias.",
+	// 	},
+	// 	{
+	// 		id: "f7af0eec-027c-41af-bd84-527e10ee230c",
+	// 		title:
+	// 			"Regulamentos sobre carga e segurança de carga em veículos comerciais",
+	// 		thumbnail: "url_da_imagem_para_regulamentos_de_carga",
+	// 		description:
+	// 			"Normas e diretrizes para o transporte seguro e adequado de carga em veículos comerciais, visando à prevenção de acidentes e danos.",
+	// 	},
+	// 	{
+	// 		id: "2923b300-a1fa-4b27-9085-29d0f0383cfe",
+	// 		title:
+	// 			"Penalidades por infrações de trânsito e procedimentos de contestação",
+	// 		thumbnail: "url_da_imagem_para_penalidades_por_infracoes",
+	// 		description:
+	// 			"Consequências legais e procedimentos para contestação de infrações de trânsito, visando à justiça e aplicação equitativa da lei.",
+	// 	},
+	// 	{
+	// 		id: "f577b84d-4466-4d24-b55a-a4944e023033",
+	// 		title:
+	// 			"Procedimentos em caso de acidentes de trânsito e responsabilidades legais",
+	// 		thumbnail: "url_da_imagem_para_procedimentos_em_acidentes",
+	// 		description:
+	// 			"Instruções e obrigações legais em caso de envolvimento em acidentes de trânsito, visando à segurança dos envolvidos e a conformidade com a lei.",
+	// 	},
+	// ];
 
-	await prisma.lesson.create({
-		data: {
-			title: "Renaissance Art",
-			thumbnail: "art_thumbnail_url",
-			time: 2.0,
-			subjectId: "d6cfaf70-a0ec-4183-b4c7-3f36d14b7424",
-		},
-	});
+	// // Função para criar 5 lições para cada tópico
+	// const createLessonsForSubjects = async () => {
+	// 	for (const subject of subjects) {
+	// 		for (let i = 1; i <= 5; i++) {
+	// 			await prisma.lesson.create({
+	// 				data: {
+	// 					title: `Lesson ${i} for ${subject.title}`,
+	// 					thumbnail: subject.thumbnail,
+	// 					time: 3.5, // Adjust as needed
+	// 					subjectId: subject.id,
+	// 				},
+	// 			});
+	// 		}
+	// 	}
+	// };
 
-	await prisma.lesson.create({
-		data: {
-			title: "Shakespearean Sonnets",
-			thumbnail: "sonnets_thumbnail_url",
-			time: 1.5,
-			subjectId: "2d1f5111-1180-4fd9-be4d-3dc972853a1c",
-		},
-	});
-
-	// Seed data for Lesson model
-	await prisma.lesson.create({
-		data: {
-			title: "Advanced Mathematics",
-			thumbnail: "advanced_mathematics_thumbnail_url",
-			time: 3.5,
-			subjectId: "91c29738-c1d7-469e-9ce5-6eb5ec80da9d",
-		},
-	});
-
-	await prisma.lesson.create({
-		data: {
-			title: "Inorganic Chemistry Basics",
-			thumbnail: "inorganic_chemistry_thumbnail_url",
-			time: 2.5,
-			subjectId: "e5ebe355-a5a6-4aec-ac4e-e88dfe520f4d",
-		},
-	});
-
-	await prisma.lesson.create({
-		data: {
-			title: "Impressionist Art Movement",
-			thumbnail: "impressionist_art_thumbnail_url",
-			time: 2.0,
-			subjectId: "d6cfaf70-a0ec-4183-b4c7-3f36d14b7424",
-		},
-	});
-
-	await prisma.lesson.create({
-		data: {
-			title: "Sonnet Writing Techniques",
-			thumbnail: "sonnet_writing_thumbnail_url",
-			time: 1.0,
-			subjectId: "2d1f5111-1180-4fd9-be4d-3dc972853a1c",
-		},
-	});
-
-	await prisma.lesson.create({
-		data: {
-			title: "Statistics and Probability",
-			thumbnail: "statistics_probability_thumbnail_url",
-			time: 4.0,
-			subjectId: "91c29738-c1d7-469e-9ce5-6eb5ec80da9d",
-		},
-	});
-
-	await prisma.lesson.create({
-		data: {
-			title: "Environmental Chemistry",
-			thumbnail: "environmental_chemistry_thumbnail_url",
-			time: 3.0,
-			subjectId: "e5ebe355-a5a6-4aec-ac4e-e88dfe520f4d",
-		},
-	});
-
-	await prisma.lesson.create({
-		data: {
-			title: "Modern Art Movements",
-			thumbnail: "modern_art_thumbnail_url",
-			time: 2.5,
-			subjectId: "d6cfaf70-a0ec-4183-b4c7-3f36d14b7424",
-		},
-	});
-
-	await prisma.lesson.create({
-		data: {
-			title: "Shakespearean Tragedies",
-			thumbnail: "shakespearean_tragedies_thumbnail_url",
-			time: 2.0,
-			subjectId: "2d1f5111-1180-4fd9-be4d-3dc972853a1c",
-		},
-	});
-
-	await prisma.lesson.create({
-		data: {
-			title: "Calculus Fundamentals",
-			thumbnail: "calculus_fundamentals_thumbnail_url",
-			time: 3.5,
-			subjectId: "91c29738-c1d7-469e-9ce5-6eb5ec80da9d",
-		},
-	});
-
-	await prisma.lesson.create({
-		data: {
-			title: "Analytical Chemistry Techniques",
-			thumbnail: "analytical_chemistry_thumbnail_url",
-			time: 2.0,
-			subjectId: "e5ebe355-a5a6-4aec-ac4e-e88dfe520f4d",
-		},
-	});
+	// // Chame a função para criar as lições
+	// createLessonsForSubjects();
 
 	console.log("Seed data created successfully");
 }

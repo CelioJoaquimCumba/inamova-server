@@ -59,9 +59,9 @@ model Lesson {
   subjectId String
   Subject Subject @relation(fields: [subjectId], references: [id])
 
+  articles Article[]
+
 }
-
-
 
 model Quiz {
   id String @id @default(uuid())
@@ -113,6 +113,7 @@ model UserQuiz {
   user User @relation(fields: [userId], references: [id])
   quiz Quiz @relation(fields: [quizId], references: [id])
 }
+
 model QuizQuestion {
   id String @id @default(uuid())
   quizId String
@@ -120,4 +121,14 @@ model QuizQuestion {
 
   quiz Quiz @relation(fields: [quizId], references: [id])
   question Question @relation(fields: [questionId], references: [id])
+}
+
+model Article {
+  id String @id @default(uuid())
+
+  content String
+
+  lessonId String
+  Lesson Lesson @relation(fields: [lessonId], references: [id])
+
 }

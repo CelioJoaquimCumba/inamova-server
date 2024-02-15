@@ -1,7 +1,7 @@
 
 import express from "express"
 import bodyParser from "body-parser"
-import { testRouter, userRouter, quizRouter,lessonRouter, subjectRouter } from "./routes/index.js"
+import { testRouter, userRouter, quizRouter,lessonRouter, subjectRouter, articleRouter } from "./routes/index.js"
 import errorHandler from "./middleware/errorHandler.js"
 import cors from "cors"
 
@@ -14,6 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use("/user", userRouter)
 app.use("/test", testRouter)
 app.use("/lesson",lessonRouter)
+app.use("/article",articleRouter)
 app.use("/subject",subjectRouter)
 app.use("/quiz", quizRouter)
 
