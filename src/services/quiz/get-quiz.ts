@@ -6,6 +6,8 @@ import { shuffleArray } from "../../utils/shuffle-array.js"
 const prisma = new PrismaClient()
 export const getQuizService = async (id: string): Promise<Array<Question>> => {
     try {
+        const productsCount = await prisma.quizQuestion.count();
+        const skip = Math.floor(Math.random() * productsCount);
         await prisma.$connect()
         const questionsWithOptions = await prisma.quizQuestion.findMany({
             where: { quizId: id },
@@ -16,7 +18,8 @@ export const getQuizService = async (id: string): Promise<Array<Question>> => {
                     options: true
                 }
                 }
-            }
+            },
+            skip: skip
         });
         if (!questionsWithOptions) {
             throw BadRequestError('Quiz not found')
