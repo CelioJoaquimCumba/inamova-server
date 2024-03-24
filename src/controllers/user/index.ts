@@ -4,6 +4,7 @@ import { login } from "./login.js";
 import { register } from "./register.js";
 import {validateToken} from "./validate-token.js"
 import { getStats } from "./getStats.js"
+import { checkPasswordToken } from "./check-password-token.js"
 
 export {
     forgotPassword,
@@ -11,5 +12,6 @@ export {
     login,
     register,
     validateToken,
-    getStats
+    getStats,
+    checkPasswordToken
 }
