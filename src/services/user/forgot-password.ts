@@ -34,8 +34,47 @@ export const forgotPasswordService = async (email: string): Promise<void> => {
 			to: email,
 			subject: "Reset your password",
 			text: "To reset your password, click here:",
-			html: `<p>To reset your password, click here:</p> <a href="http://${interfaceIP}:5500?email=${email}&token=${resetToken}">
-            <button>Reset Password</button></a>`,
+			html: `
+			<html lang="en">
+			<body>
+				<div 
+					style="color: #134e4a;
+					margin: auto;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					width: fit-content;
+					/* background-color: #134e4a; */
+					border: 1px solid #134e4a;
+					padding: 2rem;
+					border-radius: 2rem;"
+				>
+					<h1 style="text-align: center;"Recover password</h1>
+					<p>
+						Hi there, 
+						<br />
+						You requested to reset your password, for that
+						press the button below
+					</p>
+					<a href="http://${interfaceIP}:8081/--/inamova/ChangePassword?email=${email}&token=${resetToken}">
+					<input 
+						type="button" 
+						value="Recover password" 
+						style="padding: 1rem;
+						border-radius: 1rem;
+						/* color: #042f2e; */
+						color: white;
+						background-color: #042f2e;
+						border: 0;" onclick="alert("holla")"
+					/>
+					</a>
+		
+					<p>In case you didnt ask for this just ignore this email</p>
+					<p>Inamova 🚗</p>
+				</div>
+			</body>
+		</html>`,
 		};
 		// console.log(mailOptions.html)
 		await sendMail(mailOptions);

@@ -8,6 +8,8 @@
     </head>
 
     <body onload="myFunction()">
+        
+        <input type="button" value="" onclick="myFunction()">
         <script>
             function myFunction() {
 
@@ -20,7 +22,7 @@
                 const urlParams = new URLSearchParams(window.location.search);
                 const email = urlParams.get('email')
                 const token = urlParams.get('token');
-                
+
                 if (!check)
                     // alert(location.hostname);
                     alert("O caminho nao funciona neste dispositivo por favor use um dispositivo celular com a aplicacao instalada.")
