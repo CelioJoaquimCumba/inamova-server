@@ -11,7 +11,7 @@ export const loginService = async (email: string, password: string): Promise<{us
         await prisma.$connect()
         const user = await prisma.user.findFirst({ where: { email, password: hashedPassword } })
         if (!user) {
-            throw BadRequestError('Invalid email or password')
+            throw BadRequestError('E-mail ou senha inválida')
         }
         const username = user.name
         const id = user.id

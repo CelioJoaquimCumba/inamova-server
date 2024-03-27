@@ -3,26 +3,43 @@ import { EmailValidation, PasswordValidation, PhoneValidation, NameValidation } 
 import { Request, Response } from "express"
 
 export const register = async (req: Request, res: Response) => {
-    const { email, password, phone, name } : { email: string, password: string, phone: string, name: string} = req.body
+    const { email, password, phone, name }: { email: string, password: string, phone: string, name: string } = req.body
+
+    // Verifica se algum dos campos obrigatórios está faltando
     if (!email || !password || !phone || !name) {
-        return res.status(400).json({ message: 'All fields are required' })
+        return res.status(400).json({ message: 'Todos os campos são obrigatórios' })
     }
+
+    // Valida o formato do e-mail
     if (!EmailValidation(email)) {
-        return res.status(400).json({ message: 'Invalid email' })
+        return res.status(400).json({ message: 'E-mail inválido' })
     }
-    if ( !PasswordValidation(password)) {
-        return res.status(400).json({ message: 'Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number and one special character' })
+
+    // Valida o formato da senha
+    if (!PasswordValidation(password)) {
+        return res.status(400).json({
+            message: 'A senha deve ter pelo menos 8 caracteres e conter pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial'
+        })
     }
+
+    // Valida o formato do nome
     if (!NameValidation(name)) {
-        return res.status(400).json({ message: 'Name must be at least 3 characters long and contain only letters' })
+        return res.status(400).json({ message: 'O nome deve ter pelo menos 3 caracteres e conter apenas letras' })
     }
+
+    // Valida o formato do telefone
     if (!PhoneValidation(phone)) {
-        return res.status(400).json({ message: 'Invalid phone number' })
+        return res.status(400).json({ message: 'Número de telefone inválido' })
     }
+
     try {
-        const {username, token, id} = await registerService(email.toLowerCase(), password, phone, name)
-        return res.status(201).json({username, token, id})
+        // Chama o serviço de registro com o e-mail em minúsculas, senha, telefone e nome
+        const { username, token, id } = await registerService(email.toLowerCase(), password, phone, name)
+
+        // Retorna a resposta de registro bem-sucedida com nome de usuário, token e ID
+        return res.status(201).json({ username, token, id })
     } catch (error) {
+        // Retorna erro interno do servidor com mensagem de erro se o serviço de registro lançar um erro
         return res.status(500).json({ message: error.message })
     }
 }

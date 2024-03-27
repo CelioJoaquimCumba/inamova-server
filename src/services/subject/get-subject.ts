@@ -15,7 +15,7 @@ export const getSubjectService = async (id: string): Promise<Subject | null> => 
         });
 
         if (!subject) {
-            throw BadRequestError('Subject not found');
+            throw BadRequestError('Assunto não encontrado');
         }
 
         // Return the specific subject

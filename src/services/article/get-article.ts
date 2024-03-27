@@ -15,7 +15,7 @@ export const getArticleService = async (id: string): Promise<Article | null> => 
         });
 
         if (!article) {
-            throw BadRequestError('Article not found');
+            throw BadRequestError('Artigo não encontrado');
         }
 
         // Return the specific article

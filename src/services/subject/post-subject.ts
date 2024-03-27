@@ -15,7 +15,7 @@ export const createSubjectService = async (subjectData: Subject): Promise<Subjec
 
         return createdSubject;
     } catch (e) {
-        throw BadRequestError('Error creating subject: ' + e.message);
+        throw BadRequestError('Erro ao criar assunto: ' + e.message);
     } finally {
         await prisma.$disconnect();
     }

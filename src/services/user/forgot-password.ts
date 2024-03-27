@@ -12,7 +12,7 @@ export const forgotPasswordService = async (email: string): Promise<void> => {
         await prisma.$connect();
         const user = await prisma.user.findFirst({ where: { email } });
         if (!user) {
-            throw BadRequestError("User not found");
+            throw BadRequestError("Usuário não encontrado");
         }
         const resetToken = generateResetToken();
         const resetExpiry = new Date();

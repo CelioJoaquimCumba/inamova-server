@@ -15,7 +15,7 @@ export const createArticleService = async (articleData: Article): Promise<Articl
 
         return createdArticle;
     } catch (e) {
-        throw BadRequestError('Error creating article: ' + e.message);
+        throw BadRequestError('Erro ao criar artigo: ' + e.message);
     } finally {
         await prisma.$disconnect();
     }

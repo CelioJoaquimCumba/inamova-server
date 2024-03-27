@@ -12,7 +12,7 @@ export const registerService = async ( email: string, password: string, phone: s
     try {
         await prisma.$connect()
         if (await prisma.user.findFirst({ where: { email } })) {
-            throw BadRequestError('User already exists')
+            throw BadRequestError('Usuário já existe')
         }
 
         const user: User = await prisma.user.create({

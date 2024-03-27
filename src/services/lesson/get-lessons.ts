@@ -11,7 +11,7 @@ export const getLessonsService = async (id:string): Promise<Array<Lesson>> => {
                 subjectId: id
             }
         })
-        if(!lessons) throw BadRequestError("Lessons not found")
+        if(!lessons) throw BadRequestError("Lição não encontrada")
         return lessons
     } catch(e) {
         throw e

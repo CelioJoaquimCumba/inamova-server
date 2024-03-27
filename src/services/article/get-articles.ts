@@ -11,7 +11,7 @@ export const getArticlesService = async (id:string): Promise<Array<Article>> => 
                 lessonId: id
             }
         })
-        if(!articles) throw BadRequestError("Articles not found")
+        if(!articles) throw BadRequestError("Artigo não encontrado")
         return articles
     } catch(e) {
         throw e

@@ -10,7 +10,7 @@ try {
     const user = await prisma.user.findUnique({ where: { email } });
 
     if (!user || user.resetToken !== token || user.resetExpiry < new Date()) {
-      throw BadRequestError('Invalid or expired token');
+      throw BadRequestError('Token inválido ou expirado');
     }
     const hashedPassword = generateHash(password);
 

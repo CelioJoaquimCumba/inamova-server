@@ -38,7 +38,7 @@ export const getQuizService = async (id: string): Promise<Array<Question>> => {
     });
 
     if (!questionsWithOptions) {
-      throw BadRequestError("Quiz not found");
+      throw BadRequestError("Teste não encontrado");
     }
 
     // Extract only the 'question' property and shuffle options

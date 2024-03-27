@@ -15,7 +15,7 @@ export const createLessonService = async (lessonData: Lesson): Promise<Lesson> =
 
         return createdLesson;
     } catch (e) {
-        throw BadRequestError('Error creating lesson: ' + e.message);
+        throw BadRequestError('Erro ao criar aula: ' + e.message);
     } finally {
         await prisma.$disconnect();
     }

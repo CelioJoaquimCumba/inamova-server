@@ -15,7 +15,7 @@ export const getLessonService = async (id: string): Promise<Lesson | null> => {
         });
 
         if (!lesson) {
-            throw BadRequestError('Lesson not found');
+            throw BadRequestError('Lição não encontrada');
         }
 
         // Return the specific lesson

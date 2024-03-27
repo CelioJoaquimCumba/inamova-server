@@ -13,7 +13,7 @@ export const getStatsService = async( id: string): Promise<{ passed: number; mad
                 id: id
             }
         })
-        if(!user) throw NotFoundError("User not found")
+        if(!user) throw NotFoundError("Usuário não encontrado")
 
         const made = await prisma.result.count({
             where: {

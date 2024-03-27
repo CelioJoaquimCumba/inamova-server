@@ -8,11 +8,11 @@ export const validateTokenService = async( token: string) : Promise<boolean> => 
         await prisma.$connect()
         const decoded = jwt.verify(token, process.env.JWT_SECRET_KEY) as { id: string }
         if(!decoded) {
-            throw BadRequestError('Invalid token')
+            throw BadRequestError('Token inválido')
         }
         const user = await prisma.user.findUnique({ where: { id: decoded.id } })
         if(!user) {
-            throw BadRequestError('User not found')
+            throw BadRequestError('Usuário não encontrado')
         }
 
         return true

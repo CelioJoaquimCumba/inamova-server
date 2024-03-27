@@ -1,4 +1,4 @@
 export const NameValidation = (name: string): boolean => {
-    const re =/^[a-zA-Z\s]{2,}$/
+    const re = /^[a-zA-Z\u00C0-\u00FF\s]{2,}$/;
     return re.test(name);
 };
