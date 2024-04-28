@@ -215,5 +215,175 @@ async function main() {
 				},
 			],
 		},
+		{
+			content:
+				"Que veículos devem ter seguro de responsabilidade civil para transitar na via pública?",
+			image: "https://i.ibb.co/zNmn7S3/image-8-new.jpg",
+			options: [
+				{ content: "Todos os veículos", isCorrect: false },
+				{ content: "Os veículos a motor. - opção correta", isCorrect: true },
+				{ content: "Só os ciclomotores.", isCorrect: false },
+				{ content: "Apenas os veículos automóveis", isCorrect: false },
+			],
+			explanation:
+				"Os veículos a motor devem ter seguro de responsabilidade civil para transitar na via pública.",
+		},
+		{
+			content:
+				"Na situação apresentada, pode ultrapassar o veículo pela esquerda?",
+			image: "https://i.ibb.co/rs33J5H/image-18-new.jpg",
+			options: [
+				{
+					content:
+						"Sim, se esse veículo circula por baixo do limite máximo de velocidade",
+					isCorrect: false,
+				},
+				{ content: "Não - opção correta", isCorrect: true },
+				{
+					content: "Sim, pode-se sempre ultrapassar pela esquerda.",
+					isCorrect: false,
+				},
+				{ content: "Sim, porque a linha é descontínua.", isCorrect: false },
+			],
+			explanation:
+				"Na situação apresentada, não é seguro ultrapassar o veículo pela esquerda, pois a linha é contínua, indicando proibição de ultrapassagem.",
+		},
+		{
+			content:
+				"Os automóveis ligeiros de passageiros, devem estar equipados com sinais de pré-sinalização de perigo?",
+			image: "https://i.ibb.co/HGDRCJF/image-27-new.jpg",
+			options: [
+				{
+					content:
+						"Sim, um colete refletor e um triângulo de pré-sinalização de perigo",
+					isCorrect: false,
+				},
+				{ content: "Não.", isCorrect: false },
+				{
+					content:
+						"Sim, dois triângulos de pré-sinalização de perigo e um colete refletor - opção correta",
+					isCorrect: true,
+				},
+				{
+					content:
+						"Sim, apenas são obrigatórios dois triângulos de pré-sinalização de perigo",
+					isCorrect: false,
+				},
+			],
+			explanation:
+				"Os automóveis ligeiros de passageiros devem estar equipados com dois triângulos de pré-sinalização de perigo e um colete refletor.",
+		},
+		{
+			content:
+				"O condutor do veículo amarelo ao mudar de direção para a direita, a quem deve ceder a passagem?",
+			image: "https://i.ibb.co/whqK9h7/image-28-new.jpg",
+			options: [
+				{
+					content: "Apenas aos condutores que se apresentem pela direita.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Aos que circulam em sentido contrário e pretendam seguir em frente ou mudar de direção para a esquerda - opção correta",
+					isCorrect: true,
+				},
+				{
+					content: "A todos os condutores que circulem pela via transversal",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Só aos condutores que circulam em sentido contrário e sigam em frente.",
+					isCorrect: false,
+				},
+			],
+			explanation:
+				"O condutor do veículo amarelo ao mudar para a direita deve ceder a passagem aos que circulam em sentido contrário e pretendem seguir em frente ou mudar para a esquerda.",
+		},
+		{
+			content:
+				"Se pretender inverter o sentido de marcha numa via cuja largura não permite fazê-lo sem prejudicar o trânsito, deve:",
+			image: "https://i.ibb.co/BPzQxZY/image-4-new.jpg",
+			explanation:
+				"Se a largura da via não permitir inverter o sentido de marcha sem prejudicar o trânsito, o condutor deve continuar até encontrar um local adequado onde não prejudique o trânsito.",
+			options: [
+				{
+					content:
+						"Inverter o sentido de marcha com o menor número de manobras possíveis.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Parar o veículo perto do eixo da via e esperar até que não haja tráfego.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Continuar até encontrar um local adequado onde não prejudique o trânsito.",
+					isCorrect: true,
+				},
+				{
+					content: "Fazer a manobra, mesmo que prejudique o trânsito.",
+					isCorrect: false,
+				},
+			],
+		},
+		{
+			content:
+				"O condutor, ao mudar de direção, tem que ceder passagem aos peões que estejam a atravessar a faixa de rodagem?",
+			image: "https://i.ibb.co/ZMDGw54/image-5-new.jpg",
+			explanation:
+				"Sim, ao mudar de direção, o condutor tem que ceder passagem aos peões que estejam a atravessar a faixa de rodagem. Isso contribui para a segurança dos peões.",
+			options: [
+				{ content: "Não.", isCorrect: false },
+				{
+					content: "Sim, mas só aos que o façam pela passagem para peões.",
+					isCorrect: false,
+				},
+				{ content: "Sim.", isCorrect: true },
+				{ content: "Sim, desde que utilize o pisca.", isCorrect: false },
+			],
+		},
+		{
+			content:
+				"Em caso de avaria, os sinais de pré-sinalização de perigo devem colocar-se por forma a ficar bem visíveis a uma distância de…",
+			image: "https://i.ibb.co/jDgRGrc/image-12-new.jpg",
+			explanation:
+				"Em caso de avaria, os sinais de pré-sinalização de perigo devem colocar-se por forma a ficar bem visíveis a uma distância de pelo menos 100 metros. Isso alerta os outros condutores sobre a situação de perigo.",
+			options: [
+				{ content: "Pelo menos 50 metros.", isCorrect: false },
+				{ content: "Pelo menos 100 metros.", isCorrect: true },
+				{ content: "Pelo menos 25 metros.", isCorrect: false },
+				{ content: "10 metros.", isCorrect: false },
+			],
+		},
+		{
+			content:
+				"Nos veículos destinados ao transporte de passageiros mistos…",
+			image: "https://i.ibb.co/JyF9qMp/image-2-new.png",
+			explanation:
+				"A carga deve estar arrumada por forma a que seja devidamente assegurado o equilíbrio do veículo.",
+			options: [
+				{
+					content:
+						"A carga pode ocultar a matrícula e os dispositivos de sinalização e iluminação.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"A carga deve colocar-se na parte reservada aos passageiros, mesmo que reduza a visibilidade do condutor.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"A carga deve estar arrumada por forma a que seja devidamente assegurado o equilíbrio do veículo.",
+					isCorrect: true,
+				},
+				{
+					content: "A carga pode ultrapassar os contornos do veículo.",
+					isCorrect: false,
+				},
+			],
+		},
 	];
 }

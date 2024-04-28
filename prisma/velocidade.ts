@@ -150,5 +150,44 @@ async function main() {
 				},
 			],
 		},
+		{
+			content:
+				"Fora das localidades, os condutores de ciclomotores e quadriciclos não devem exceder a velocidade instantânea de:",
+			image: "https://i.ibb.co/p3VJQqM/image-7-new.jpg",
+			options: [
+				{ content: "50 km/h", isCorrect: false },
+				{ content: "10 km/h.", isCorrect: false },
+				{ content: "45 km/h. - opção correta", isCorrect: true },
+				{ content: "35 km/h", isCorrect: false },
+			],
+			explanation:
+				"Fora das localidades, os condutores de ciclomotores e quadriciclos não devem exceder a velocidade instantânea de 45 km/h.",
+		},
+		{
+			content:
+				"Qual é a velocidade instantânea que não devem exceder os condutores de ciclomotores e quadriciclos dentro das localidades?",
+			image: "https://i.ibb.co/CvrJvmh/image-39-new.jpg",
+			options: [
+				{ content: "45 km/h.", isCorrect: false },
+				{ content: "40 km/h. - opção correta", isCorrect: true },
+				{ content: "50 km/h", isCorrect: false },
+				{ content: "60 km/h.", isCorrect: false },
+			],
+			explanation:
+				"Os condutores de ciclomotores e quadriciclos não devem exceder a velocidade instantânea de 40 km/h dentro das localidades.",
+		},
+		{
+			content:
+				"Os condutores de motociclos simples, fora das localidades, não devem exceder a velocidade instantânea de:",
+			image: "https://i.ibb.co/6gWXHhV/image-23-new.jpg",
+			explanation:
+				"Os condutores de motociclos simples, fora das localidades, não devem exceder a velocidade instantânea de 90 km/h. Respeitar os limites de velocidade contribui para a segurança rodoviária.",
+			options: [
+				{ content: "90 km/h.", isCorrect: true },
+				{ content: "60 km/h.", isCorrect: false },
+				{ content: "70 km/h.", isCorrect: false },
+				{ content: "80 km/h.", isCorrect: false },
+			],
+		},
 	];
 }

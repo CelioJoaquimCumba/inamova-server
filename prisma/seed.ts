@@ -2682,7 +2682,7 @@ async function main() {
 	const drivingTestQuestions7: Question[] = [
 		{
 			content:
-				"O que indica o sinal? (img: https://i.ibb.co/6JrxNBG/image-new.png)",
+				"O que indica o sinal?",
 			image: "https://i.ibb.co/6JrxNBG/image-new.png",
 			explanation: "A presença de cancela motorizada ao centro.",
 			options: [
@@ -2699,7 +2699,7 @@ async function main() {
 		},
 		{
 			content:
-				"Se o condutor sofre de uma doença, que deve fazer para reduzir o risco de ter um acidente? (img: https://i.ibb.co/wh85N7b/image-1-new.png)",
+				"Se o condutor sofre de uma doença, que deve fazer para reduzir o risco de ter um acidente?",
 			image: "https://i.ibb.co/wh85N7b/image-1-new.png",
 			explanation: "Conhecer os efeitos secundários dos medicamentos.",
 			options: [
@@ -2721,7 +2721,7 @@ async function main() {
 		},
 		{
 			content:
-				"Nos veículos destinados ao transporte de passageiros mistos… (img: https://i.ibb.co/JyF9qMp/image-2-new.png)",
+				"Nos veículos destinados ao transporte de passageiros mistos…",
 			image: "https://i.ibb.co/JyF9qMp/image-2-new.png",
 			explanation:
 				"A carga deve estar arrumada por forma a que seja devidamente assegurado o equilíbrio do veículo.",
@@ -2749,7 +2749,7 @@ async function main() {
 		},
 		{
 			content:
-				"Os sistemas de segurança passiva dos veículos… (img: https://i.ibb.co/RBfSW6w/image-3-new.png)",
+				"Os sistemas de segurança passiva dos veículos…",
 			image: "https://i.ibb.co/RBfSW6w/image-3-new.png",
 			explanation:
 				"Devem ser utilizados corretamente, porque o seu mau uso pode ser perigoso.",
@@ -2773,7 +2773,7 @@ async function main() {
 		},
 		{
 			content:
-				"A recolha de informação é afetada pela condução noturna. Assim, de noite devo: (img: https://i.ibb.co/9Yq9smp/image-4-new.png)",
+				"A recolha de informação é afetada pela condução noturna. Assim, de noite devo:",
 			image: "https://i.ibb.co/9Yq9smp/image-4-new.png",
 			explanation: "Moderar a velocidade.",
 			options: [
@@ -2785,7 +2785,7 @@ async function main() {
 		},
 		{
 			content:
-				"Os peões podem transitar pela faixa de rodagem nesta estrada? (img: https://i.ibb.co/4fvpDZd/image-5-new.png)",
+				"Os peões podem transitar pela faixa de rodagem nesta estrada?",
 			image: "https://i.ibb.co/4fvpDZd/image-5-new.png",
 			explanation:
 				"Sim, com prudência e por forma a não prejudicar o trânsito de veículos.",
@@ -2813,7 +2813,7 @@ async function main() {
 		},
 		{
 			content:
-				"O que devem fazer os condutores se o sinal luminoso desta interseção está avariado? (img: https://i.ibb.co/41YsDMM/image-6-new.png)",
+				"O que devem fazer os condutores se o sinal luminoso desta interseção está avariado?",
 			image: "https://i.ibb.co/41YsDMM/image-6-new.png",
 			explanation:
 				"Ceder a passagem aos condutores que se apresentem pela direita.",
@@ -2841,7 +2841,7 @@ async function main() {
 		},
 		{
 			content:
-				"Fatores de risco serão: (img: https://i.ibb.co/rdnGwJH/image-7-new.png)",
+				"Fatores de risco serão:",
 			image: "https://i.ibb.co/rdnGwJH/image-7-new.png",
 			explanation: "Todos os fatores que aumentem o risco de acidente.",
 			options: [
@@ -2863,7 +2863,7 @@ async function main() {
 		},
 		{
 			content:
-				"É proibido parar ou estacionar, fora das localidades: (img: https://i.ibb.co/FhfQvg3/image-8-new.png)",
+				"É proibido parar ou estacionar, fora das localidades:",
 			image: "https://i.ibb.co/FhfQvg3/image-8-new.png",
 			explanation:
 				"A menos de 50 m dos cruzamentos, entroncamentos, curvas ou lombas de visibilidade reduzida.",
@@ -2892,7 +2892,7 @@ async function main() {
 		},
 		{
 			content:
-				"O significado deste sinal é: (img: https://i.ibb.co/K7YM5Dv/image-9-new.png)",
+				"O significado deste sinal é:",
 			image: "https://i.ibb.co/K7YM5Dv/image-9-new.png",
 			explanation: "Entroncamento agudo da direita.",
 			options: [
@@ -3123,25 +3123,7 @@ async function main() {
 				},
 			],
 		},
-		{
-			content:
-				"Que efeitos tem a fadiga na condução? (img: https://i.ibb.co/ZGxWRC9/image-23-new.png)",
-			image: "https://i.ibb.co/ZGxWRC9/image-23-new.png",
-			explanation: "Reduz a capacidade de concentração e a segurança.",
-			options: [
-				{ content: "Reduz o tempo de reação do condutor.", isCorrect: false },
 				{
-					content: "Reduz a capacidade de concentração e a segurança.",
-					isCorrect: true,
-				},
-				{
-					content: "Diminui a sensibilidade ao encandeamento.",
-					isCorrect: false,
-				},
-				{ content: "Melhora a atenção do condutor.", isCorrect: false },
-			],
-		},
-		{
 			content: "O significado deste sinal é:",
 			image:
 				"https://i.ibb.co/bN1zvXR/hd-f11a0a81c90d012a5f4dbd36a3115311-65d76910bd354.png",
@@ -3638,31 +3620,6 @@ async function main() {
 				},
 				{
 					content: "Sentir-se enérgico podendo controlar melhor o veículo.",
-					isCorrect: false,
-				},
-			],
-			explanation: "",
-		},
-		{
-			content:
-				"Deve ter alguma precaução especial quando circula dentro das localidades?",
-			image:
-				"https://i.ibb.co/Kh8DyfS/hd-aadc8b2245b5fb43a2b6f158d66b51b6-65dc88a078899.png",
-			options: [
-				{ content: "Não.", isCorrect: false },
-				{
-					content:
-						"Sim, moderar a velocidade, especialmente nas vias marginadas por edificações.",
-					isCorrect: true,
-				},
-				{
-					content:
-						"Sim, utilizar os sinais sonoros quando se aproximar de peões.",
-					isCorrect: false,
-				},
-				{
-					content:
-						"Sim, apenas não ficar imobilizado nos cruzamentos ou entroncamentos.",
 					isCorrect: false,
 				},
 			],
@@ -4937,19 +4894,6 @@ async function main() {
 			explanation: "",
 		},
 		{
-			content:
-				"Os condutores de motociclos simples, fora das localidades, não devem exceder a velocidade instantânea de:",
-			image:
-				"https://i.ibb.co/SQQ4FBS/hd-97b65707c2212e82e7f651962583b472-65e046aca0c12.png",
-			options: [
-				{ content: "60 km/h.", isCorrect: false },
-				{ content: "70 km/h.", isCorrect: false },
-				{ content: "80 km/h.", isCorrect: true },
-				{ content: "90 km/h.", isCorrect: false },
-			],
-			explanation: "",
-		},
-		{
 			content: "O condutor seleciona o ato motor a realizar em que momento?",
 			image:
 				"https://i.ibb.co/17BWZpg/hd-95a8e439377ba9aa426dd322d4bfb6d1-65e0466645da7-1.png",
@@ -6018,32 +5962,6 @@ async function main() {
 			explanation: "",
 		},
 		{
-			content: "Os peões podem transitar pela faixa de rodagem nesta estrada?",
-			image: "https://i.ibb.co/zGQ6LH6/Screenshot-2024-03-01-180305-new.png",
-			options: [
-				{
-					content:
-						"Não, nesta estrada não podem transitar, já que não tem bermas.",
-					isCorrect: false,
-				},
-				{
-					content:
-						"Sim, com prudência e por forma a não prejudicar o trânsito de veículos.",
-					isCorrect: true,
-				},
-				{
-					content:
-						"Sim e devem fazê-lo pela esquerda da faixa de rodagem, em relação ao seu sentido de marcha.",
-					isCorrect: false,
-				},
-				{
-					content: "Sim, mais só quando necessitem atravessar.",
-					isCorrect: false,
-				},
-			],
-			explanation: "",
-		},
-		{
 			content:
 				"Que veículos devem ter o seguro de responsabilidade civil para transitar na via pública?",
 			image: "https://i.ibb.co/Hz8tWZK/Screenshot-2024-03-01-194926-new.png",
@@ -6229,30 +6147,6 @@ async function main() {
 			explanation: "",
 		},
 		{
-			content: "São evitáveis os acidentes de viação?",
-			image: "https://i.ibb.co/Z8vQD4D/Screenshot-2024-03-01-200240-new.png",
-			options: [
-				{
-					content: "Não, porque os acidentes ocorrem por acaso",
-					isCorrect: false,
-				},
-				{
-					content:
-						"Sim, podemos aprender a evitá-los e a reduzir as suas consequências",
-					isCorrect: true,
-				},
-				{
-					content: "Sim, mas só se o estado das estradas melhorar",
-					isCorrect: false,
-				},
-				{
-					content: "Sim, excepto os causados pelo mau estado dos pneus",
-					isCorrect: false,
-				},
-			],
-			explanation: "",
-		},
-		{
 			content:
 				"É permitido que uma criança de 6 anos viaje no banco da frente de um automóvel?",
 			image: "https://i.ibb.co/cvc1bGR/Screenshot-2024-03-01-173235-new.png",
@@ -6290,23 +6184,6 @@ async function main() {
 					isCorrect: false,
 				},
 				{ content: "Em qualquer situação", isCorrect: true },
-			],
-			explanation: "",
-		},
-		{
-			content: "Uma mulher grávida, é obrigada a usar o cinto de segurança?",
-			image: "https://i.ibb.co/zGxKc2j/Screenshot-2024-03-01-172926-new.png",
-			options: [
-				{
-					content: "Não, porque é prejudicial para a criança",
-					isCorrect: false,
-				},
-				{ content: "Não é obrigatório, mas é aconselhável", isCorrect: false },
-				{
-					content:
-						"Sim e é muito importante que esteja bem colocado porque senão, tanto ela como a criança, podem sofrer lesões graves em caso de acidente",
-					isCorrect: true,
-				},
 			],
 			explanation: "",
 		},
@@ -7971,34 +7848,6 @@ async function main() {
 		},
 		{
 			content:
-				"Se pretender inverter o sentido de marcha numa via cuja largura não permite fazê-lo sem prejudicar o trânsito, deve:",
-			image:
-				"https://i.ibb.co/PTL0Lnc/Whats-App-Image-2024-02-28-at-17-new-37-44-ae7062ab.png",
-			options: [
-				{
-					content:
-						"Inverter o sentido de marcha com a menor número de manobras possíveis",
-					isCorrect: false,
-				},
-				{
-					content:
-						"Parar o veículo perto do eixo da via e esperar até que não haja tráfego",
-					isCorrect: false,
-				},
-				{
-					content:
-						"Continuar até encontrar um local adequado onde não prejudique o trânsito",
-					isCorrect: true,
-				},
-				{
-					content: "Fazer a manobra, mesmo que prejudique o trânsito",
-					isCorrect: false,
-				},
-			],
-			explanation: "",
-		},
-		{
-			content:
 				"O feixe luminoso emitido pelas luzes de cruzamento (médios), deve projectar-se no solo:",
 			image:
 				"https://i.ibb.co/GHXV7TK/Whats-App-Image-2024-02-28-at-17-new-37-44-dd0e7a02.png",
@@ -8321,34 +8170,6 @@ async function main() {
 			explanation: "",
 		},
 		{
-			content: "O que se entende por primeiros socorros?",
-			image:
-				"https://i.ibb.co/n6GNMFV/Whats-App-Image-2024-02-28-at-19-new-22-53-dd50c1a7.png",
-			options: [
-				{
-					content:
-						"É a chegada rápida do pessoal especializado ao local da ocorrência do sinistro",
-					isCorrect: false,
-				},
-				{
-					content:
-						"São os cuidados prestados a uma pessoa que se fere ou adoece de repente, para mantê-la viva e impedir o agravamento da situação",
-					isCorrect: true,
-				},
-				{
-					content:
-						"É o transporte adequado do sinistrado ou doente ao posto médico",
-					isCorrect: false,
-				},
-				{
-					content:
-						"São os meios humanos e materiais utilizados para a remoção dos acidentados",
-					isCorrect: false,
-				},
-			],
-			explanation: "",
-		},
-		{
 			content: "Se o veículo entrar em aquaplanagem (hidroplanagem) deve:",
 			image:
 				"https://i.ibb.co/P5L0CFL/Whats-App-Image-2024-02-28-at-19-new-22-52-41a954a1.png",
@@ -8400,31 +8221,6 @@ async function main() {
 					content:
 						"Manobra através da qual o condutor coloca o veículo no mesmo sentido e na mesma direcção",
 					isCorrect: true,
-				},
-			],
-			explanation: "",
-		},
-		{
-			content:
-				"Deve ter alguma precaução especial quando circula dentro das localidades?",
-			image:
-				"https://i.ibb.co/0rGP8nK/Whats-App-Image-2024-02-28-at-19-new-22-54-3d410329.png",
-			options: [
-				{ content: "Não", isCorrect: false },
-				{
-					content:
-						"Sim, moderar a velocidade, especialmente nas vias marginadas por edificações",
-					isCorrect: true,
-				},
-				{
-					content:
-						"Sim, utilizar os sinais sonoros quando se aproximar de peões",
-					isCorrect: false,
-				},
-				{
-					content:
-						"Sim, apenas não ficar imobilizado nos cruzamentos ou entroncamentos",
-					isCorrect: false,
 				},
 			],
 			explanation: "",

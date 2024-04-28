@@ -380,6 +380,336 @@ async function main() {
 				},
 				{ content: "Sempre durante a noite.", isCorrect: false },
 			],
+		},{
+			content: "O que indica o sinal?",
+			image: "https://i.ibb.co/w7GphYD/image-46-new.jpg",
+			options: [
+				{
+					content: "Desvio de fila de trânsito para a direita",
+					isCorrect: false,
+				},
+				{
+					content: "Desvio da fila de trânsito para a esquerda - opção correta",
+					isCorrect: true,
+				},
+				{
+					content: "Desvio e aumento de faixa de trânsito para a esquerda.",
+					isCorrect: false,
+				},
+			],
+			explanation:
+				"Este sinal indica um desvio da fila de trânsito para a esquerda.",
+		},
+		{
+			content: "O que indica o sinal?",
+			image: "https://i.ibb.co/4msVgqx/image-12-new.jpg",
+			options: [
+				{ content: "Indica a existência de uma via rápida.", isCorrect: false },
+				{
+					content: "Indica a existência de uma via de sentido único",
+					isCorrect: false,
+				},
+				{
+					content: "Indica a existência de uma Autoestrada - opção correta",
+					isCorrect: true,
+				},
+			],
+			explanation: "Este sinal indica a existência de uma Autoestrada.",
+		},
+		{
+			content: "O que indica o sinal?",
+			image: "https://i.ibb.co/pfXGjsR/image-14-new.jpg",
+			options: [
+				{
+					content:
+						"Via obrigatória para veículos que transportam substâncias perigosas. - opção correta",
+					isCorrect: true,
+				},
+				{
+					content:
+						"Fim da proibição de circulação de veículos que transportam substâncias perigosas",
+					isCorrect: false,
+				},
+				{
+					content: "Via obrigatória para automóveis pesados",
+					isCorrect: false,
+				},
+			],
+			explanation:
+				"Este sinal indica uma via obrigatória para veículos que transportam substâncias perigosas.",
+		},
+		{
+			content: "O que indica o sinal?",
+			image: "https://i.ibb.co/tCSBw5H/image-17-new.jpg",
+			options: [
+				{ content: "Estacionamento proibido.", isCorrect: false },
+				{
+					content: "Paragem e estacionamento proibidos - opção correta",
+					isCorrect: true,
+				},
+				{ content: "Estacionamento condicionado", isCorrect: false },
+			],
+			explanation:
+				"Este sinal indica a proibição de paragem e estacionamento na zona indicada.",
+		},
+		{
+			content: "O que indica o sinal?",
+			image: "https://i.ibb.co/YLMfjd5/image-19-new.jpg",
+			options: [
+				{ content: "Proibição de circulação de peões.", isCorrect: false },
+				{ content: "Prioridade de passagem para peões", isCorrect: false },
+				{ content: "Proibição de passagem de peões.", isCorrect: false },
+				{ content: "Pista obrigatória para peões.", isCorrect: true },
+			],
+			explanation:
+				"Este sinal indica uma pista obrigatória para peões, devendo estes seguir por essa via.",
+		},
+		{
+			content: "O que a o sinal?",
+			image: "https://i.ibb.co/TqbnmjR/image-20-new.jpg",
+			options: [
+				{
+					content: "Sinalização luminosa em manutenção. - opção correta",
+					isCorrect: true,
+				},
+				{ content: "Sinalização luminosa.", isCorrect: false },
+				{ content: "Passagem de nível", isCorrect: false },
+			],
+			explanation:
+				"Este sinal indica sinalização luminosa em manutenção, alertando os condutores para possíveis variações nas condições de tráfego.",
+		},
+		{
+			content: "Diante do sinal, o condutor fica a saber que:",
+			image: "https://i.ibb.co/kSZg4f2/image-22-new.jpg",
+			options: [
+				{
+					content: "Não pode utilizar os sinais sonoros. - opção correta",
+					isCorrect: true,
+				},
+				{ content: "Deve utilizar os sinais sonoros", isCorrect: false },
+				{
+					content: "É obrigado a desligar as luzes de estrada.",
+					isCorrect: false,
+				},
+			],
+			explanation:
+				"Diante do sinal, o condutor fica a saber que não pode utilizar os sinais sonoros, devendo respeitar essa proibição.",
+		},
+		{
+			content: "O que indica o sinal vertical?",
+			image: "https://i.ibb.co/vqRfffP/image-31-new.jpg",
+			options: [
+				{
+					content:
+						"Pré-sinalização de via sem saída à direita. - opção correta",
+					isCorrect: true,
+				},
+				{ content: "Estrada sem saída.", isCorrect: false },
+				{
+					content: "Pré-sinalização de via sem saída à esquerda",
+					isCorrect: false,
+				},
+			],
+			explanation:
+				"O sinal vertical indica pré-sinalização de via sem saída à direita.",
+		},
+		{
+			content: "Diante do sinal, é proibido:",
+			image: "https://i.ibb.co/23L3xjH/image-34-new.jpg",
+			options: [
+				{ content: "Mudar de direção para à direita.", isCorrect: false },
+				{
+					content: "Inverter o sentido de marcha - opção correta",
+					isCorrect: true,
+				},
+				{ content: "Mudar de direção para à esquerda", isCorrect: false },
+			],
+			explanation: "Diante do sinal, é proibido inverter o sentido de marcha.",
+		},
+		{
+			content: "O que indica o sinal?",
+			image: "https://i.ibb.co/8BFc9TF/image-38-new.jpg",
+			options: [
+				{ content: "Sentidos obrigatórios possíveis", isCorrect: false },
+				{ content: "Sentido obrigatório para à direita", isCorrect: false },
+				{
+					content: "Sentido obrigatório giratório - opção correta",
+					isCorrect: true,
+				},
+			],
+			explanation: "O sinal indica sentido obrigatório giratório.",
+		},
+		{
+			content: "O sinal de cor amarela e preta, indica:",
+			image: "https://i.ibb.co/KXyfLh7/image-44-new.jpg",
+			options: [
+				{ content: "Barricada", isCorrect: false },
+				{
+					content: "Baía limitadora de altura. - opção correta",
+					isCorrect: true,
+				},
+				{ content: "Baía indicadora de separador físico.", isCorrect: false },
+			],
+			explanation:
+				"O sinal de cor amarela e preta indica baía limitadora de altura.",
+		},
+		{
+			content: "O que indica o sinal?",
+			image: "https://i.ibb.co/ykPn6PL/image-1-new.jpg",
+			explanation:
+				"O sinal indica 'Trânsito proibido a tractores agrícolas'. Os condutores devem estar cientes da proibição de circulação de tratores agrícolas nessa via.",
+			options: [
+				{
+					content: "Fim da proibição de circulação de tratores agrícolas.",
+					isCorrect: false,
+				},
+				{
+					content: "Trânsito proibido a veículos de construção.",
+					isCorrect: false,
+				},
+				{
+					content: "Trânsito proibido a tractores agrícolas.",
+					isCorrect: true,
+				},
+				{ content: "Paragem obrigatória.", isCorrect: false },
+			],
+		},
+		{
+			content: "O que indica o sinal?",
+			image: "https://i.ibb.co/h1KvF7z/image-7-new.jpg",
+			explanation:
+				"O sinal indica 'Paragem proibida'. Os condutores não podem estacionar nesse local, garantindo a fluidez do tráfego.",
+			options: [
+				{ content: "Trânsito proibido a senhoras.", isCorrect: false },
+				{ content: "Paragem proibida.", isCorrect: true },
+				{ content: "Paragem obrigatória.", isCorrect: false },
+				{ content: "Fim da proibição de estacionamento.", isCorrect: false },
+			],
+		},
+		{
+			content: "O que indica o sinal?",
+			image: "https://i.ibb.co/30V9Fpn/image-8-new.jpg",
+			explanation:
+				"O sinal indica 'Passagem de peões'. Os condutores devem estar atentos à presença de peões na via e garantir a sua segurança.",
+			options: [
+				{ content: "Passagem de peões.", isCorrect: true },
+				{ content: "Pista obrigatória para peões.", isCorrect: false },
+				{ content: "Passagem desnivelada para peões.", isCorrect: false },
+				{ content: "Zona de atravessamento de animais.", isCorrect: false },
+			],
+		},
+		{
+			content: "O que indica a marca rodoviária amarela?",
+			image: "https://i.ibb.co/ygkXMSW/image-14-new.jpg",
+			explanation:
+				"A marca rodoviária amarela indica 'Proibição de estacionamento'. Os condutores não podem estacionar nessa zona, contribuindo para a fluidez do tráfego.",
+			options: [
+				{ content: "Proibição de paragem.", isCorrect: false },
+				{ content: "Estacionamento condicionado.", isCorrect: false },
+				{ content: "Proibição de estacionamento.", isCorrect: true },
+				{ content: "Zona de estacionamento gratuito.", isCorrect: false },
+			],
+		},
+		{
+			content: "O que indica o sinal de perigo?",
+			image: "https://i.ibb.co/th0nXD7/image-15-new.jpg",
+			explanation:
+				"O sinal de perigo indica 'Sinalização luminosa'. Os condutores devem estar cientes da presença de sinalização luminosa na via e agir de acordo.",
+			options: [
+				{ content: "Controlo policial por pirilampos.", isCorrect: false },
+				{
+					content: "Aproximação de uma estrada com prioridade.",
+					isCorrect: false,
+				},
+				{ content: "Sinalização luminosa.", isCorrect: true },
+				{ content: "Presença de passagem de nível.", isCorrect: false },
+			],
+		},
+		{
+			content: "O que indica o sinal?",
+			image: "https://i.ibb.co/kD9Sn0f/image-18-new.jpg",
+			explanation:
+				"O sinal indica 'Obrigação de circular à velocidade mínima de 60 km/h na fila à direita'. Os condutores devem cumprir a velocidade mínima estabelecida para manter um fluxo adequado.",
+			options: [
+				{
+					content:
+						"Obrigação de circular à velocidade mínima de 60 km/h na fila à direita.",
+					isCorrect: true,
+				},
+				{
+					content:
+						"Proibição de circular à velocidade máxima de 60 km/h na fila à direita.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Obrigação de circular à velocidade mínima de 60 km/h na fila à esquerda.",
+					isCorrect: false,
+				},
+				{ content: "Fim da proibição de estacionamento.", isCorrect: false },
+			],
+		},
+		{
+			content: "O que indica o sinal?",
+			image: "https://i.ibb.co/Qr7wGVZ/image-21-new.jpg",
+			explanation:
+				"O sinal indica 'Pista obrigatória para veículos de tração animal'. Os condutores devem seguir a pista indicada pelo sinal.",
+			options: [
+				{
+					content: "Pista obrigatória para veículos de tração manual.",
+					isCorrect: false,
+				},
+				{
+					content: "Pista obrigatória para veículos de tração animal.",
+					isCorrect: true,
+				},
+				{ content: "Pista obrigatória para cavaleiros.", isCorrect: false },
+				{ content: "Pista obrigatória para ciclistas.", isCorrect: false },
+			],
+		},{
+			content:
+				"O que indica o sinal?",
+			image: "https://i.ibb.co/6JrxNBG/image-new.png",
+			explanation: "A presença de cancela motorizada ao centro.",
+			options: [
+				{
+					content: "A presença de cancela motorizada ao centro.",
+					isCorrect: false,
+				},
+				{
+					content: "A presença de entroncamento oblíquo à esquerda.",
+					isCorrect: false,
+				},
+				{ content: "A presença de ponte móvel.", isCorrect: true },
+			],
+		},
+		{
+			content:
+				"O que devem fazer os condutores se o sinal luminoso desta interseção está avariado?",
+			image: "https://i.ibb.co/41YsDMM/image-6-new.png",
+			explanation:
+				"Ceder a passagem aos condutores que se apresentem pela direita.",
+			options: [
+				{
+					content:
+						"Ceder a passagem a todos os condutores que se apresentem pela via transversal.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Ceder a passagem aos condutores que se apresentem pela direita.",
+					isCorrect: true,
+				},
+				{
+					content:
+						"Ceder a passagem aos condutores que se apresentem pela esquerda.",
+					isCorrect: false,
+				},
+				{
+					content: "Continuar a marcha, já que tenho prioridade de passagem.",
+					isCorrect: false,
+				},
+			],
 		},
 	];
 }
