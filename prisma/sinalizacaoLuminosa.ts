@@ -164,5 +164,16 @@ async function main() {
 				},
 			],
 		},
+		{
+			content: "O sinal luminoso com a seta verde indica:",
+			image:
+				"https://i.ibb.co/C0yqGqX/hd-d5207f2e2df4d7408b34b207592e8a38-65d768fa6c589.png",
+			options: [
+				{ content: "Acesso ou passagem interdito", isCorrect: false },
+				{ content: "Acesso ou passagem autorizado", isCorrect: true },
+				{ content: "Acesso ou passagem condicionado", isCorrect: false },
+			],
+			explanation: "",
+		},
 	];
 }

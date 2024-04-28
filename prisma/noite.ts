@@ -135,5 +135,25 @@ async function main() {
 				},
 			],
 		},
+		{
+			content:
+				"Desde o anoitecer até ao amanhecer, pode deixar as luzes de cruzamento acesas quando o veículo estiver estacionado?",
+			image:
+				"https://i.ibb.co/LgdgrZv/hd-907ead33a89c3e913bdcda5da551fda3-65dc88023a505.png",
+			options: [
+				{ content: "Sim, é obrigatório.", isCorrect: false },
+				{ content: "Não, é proibido.", isCorrect: true },
+				{
+					content: "Não, nesta situação deve utilizar as de estrada (máximos).",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Não, é proibido deixar qualquer luz acesa com o veículo estacionado.",
+					isCorrect: false,
+				},
+			],
+			explanation: "",
+		},
 	];
 }

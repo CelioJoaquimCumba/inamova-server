@@ -197,5 +197,62 @@ async function main() {
 				},
 			],
 		},
+		{
+			content:
+				"Existe algum truque para conseguir eliminar o álcool do corpo do condutor, de uma forma mais rápida?",
+			image: "https://i.ibb.co/6HC1TRM/image-16-new.png",
+			explanation: "Não.",
+			options: [
+				{ content: "Sim, dormir um pouco.", isCorrect: false },
+				{ content: "Sim, tomar doces.", isCorrect: false },
+				{ content: "Não.", isCorrect: true },
+				{
+					content:
+						"Consumir alguma substância psicotrópica, como cannabis ou cocaína.",
+					isCorrect: false,
+				},
+			],
+		},
+		{
+			content: "A condução sob influência do álcool provoca no condutor:",
+			image:
+				"https://i.ibb.co/bXZCLtx/hd-b489d17d66e651e402e0af59ed1617ad-65d76574d1e8e.png",
+			options: [
+				{ content: "A diminuição do tempo de reação", isCorrect: false },
+				{ content: "O aumento do tempo de reação", isCorrect: true },
+				{ content: "Não afeta o processo de condução", isCorrect: false },
+				{ content: "O aumento dos reflexos", isCorrect: false },
+			],
+			explanation: "",
+		},
+		{
+			content:
+				"Se um indivíduo atingir uma TAS de 1,2 g/l às 0 horas, só por volta das:",
+			image:
+				"https://i.ibb.co/mXLR4By/hd-da9b493e0230deddc8bdd5afeb11c1d6-65dc9bf7b68b4.png",
+			options: [
+				{
+					content:
+						"8 horas do dia seguinte é que terá eliminado completamente o álcool no seu sangue.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"22 horas do dia seguinte é que terá eliminado completamente o álcool no seu sangue.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"12 horas do dia seguinte é que terá eliminado completamente o álcool no seu sangue.",
+					isCorrect: true,
+				},
+				{
+					content:
+						"4 horas do dia seguinte é que terá eliminado completamente o álcool no seu sangue, se dormir bem.",
+					isCorrect: false,
+				},
+			],
+			explanation: "",
+		},
 	];
 }

@@ -1294,5 +1294,381 @@ async function main() {
 				},
 			],
 		},
+		{
+			content:
+				"O uso do cinto de segurança nos assentos traseiros...",
+			image: "https://i.ibb.co/9ZPRWMW/image-11-new.png",
+			explanation:
+				"Podem salvar a vida aos seus ocupantes e impedem que eles causem lesões graves aos outros passageiros.",
+			options: [
+				{
+					content: "Só são obrigatórios fora das localidades.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"São da exclusiva responsabilidade dos ocupantes, já que num acidente seriam os únicos afetados.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Podem salvar a vida aos seus ocupantes e impedem que eles causem lesões graves aos outros passageiros.",
+					isCorrect: true,
+				},
+				{ content: "Não é obrigatório, mas é aconselhável.", isCorrect: false },
+			],
+		},
+		{
+			content:
+				"O condutor que pretenda mudar de direção para a esquerda deve:",
+			image: "https://i.ibb.co/ZXhHgM4/image-12-new.png",
+			explanation:
+				"Aproximar-se, com a necessária antecedência, da margem esquerda da faixa de rodagem e efetuar a manobra no trajecto mais curto.",
+			options: [
+				{
+					content:
+						"Aproximar-se, com a necessária antecedência, da margem direita da faixa de rodagem e efetuar a manobra no trajecto mais curto.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Aproximar-se, com a necessária antecedência, da margem esquerda da faixa de rodagem e efetuar a manobra no trajecto mais longo.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Aproximar-se, com a necessária antecedência, da margem esquerda da faixa de rodagem e efetuar a manobra no trajecto mais curto.",
+					isCorrect: true,
+				},
+				{
+					content:
+						"Aproximar-se, com a necessária antecedência, do eixo da via e efetuar a manobra no trajecto mais curto.",
+					isCorrect: false,
+				},
+			],
+		},
+		{
+			content:
+				"A definição de parque de estacionamento é:",
+			image: "https://i.ibb.co/kQW7n2p/image-15-new.png",
+			explanation:
+				"Local exclusivamente destinado ao estacionamento de veículos.",
+			options: [
+				{
+					content: "Local exclusivamente destinado ao descanso dos condutores.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Local exclusivamente destinado às cargas e descargas dos veículos.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Local exclusivamente destinado ao estacionamento de veículos.",
+					isCorrect: true,
+				},
+				{
+					content:
+						"Local exclusivamente destinado à manutenção e reparação dos veículos.",
+					isCorrect: false,
+				},
+			],
+		},
+		{
+			content:
+				"A capacidade de o condutor prever e antecipar aumenta:",
+			image: "https://i.ibb.co/PrkJBdy/image-18-new.png",
+			explanation: "Com a experiência.",
+			options: [
+				{ content: "Com a categoria do veículo.", isCorrect: false },
+				{ content: "Com a velocidade do veículo.", isCorrect: false },
+				{ content: "Com a experiência.", isCorrect: true },
+				{ content: "Com a idade do condutor.", isCorrect: false },
+			],
+		},
+		{
+			content:
+				"Exceto o disposto em regulamentos locais e em caso de manifesta necessidade:",
+			image: "https://i.ibb.co/9hV5bLR/image-19-new.png",
+			explanation:
+				"Pode utilizar-se o lado direito da faixa de rodagem para ultrapassar ou mudar de direção.",
+			options: [
+				{
+					content:
+						"Pode utilizar-se o lado direito da faixa de rodagem para ultrapassar ou mudar de direção.",
+					isCorrect: true,
+				},
+				{
+					content:
+						"Pode utilizar-se o lado direito da faixa de rodagem para estacionar.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Pode utilizar-se o lado direito da faixa de rodagem para a manobra de marcha atrás.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Pode utilizar-se o lado direito da faixa de rodagem para conduzir a grande velocidade.",
+					isCorrect: false,
+				},
+			],
+		},
+		{
+			content:
+				"Em épocas de nevoeiro",
+			image: "https://i.ibb.co/ZmJ3BX2/image-22-new.png",
+			explanation:
+				"As escovas limpa-vidros funcionais, água no depósito do limpa pára-brisas e o aquecimento ou o ar condicionado a ventilar contra o pára-brisas.",
+			options: [
+				{
+					content: "Os vidros e os filtros de óleo sempre limpos.",
+					isCorrect: false,
+				},
+				{ content: "O interior do veículo bem aquecido.", isCorrect: false },
+				{
+					content:
+						"As escovas limpa-vidros funcionais, água no depósito do limpa pára-brisas e o aquecimento ou o ar condicionado desligados para não prejudicar o pára-brisas.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"As escovas limpa-vidros funcionais, água no depósito do limpa pára-brisas e o aquecimento ou o ar condicionado a ventilar contra o pára-brisas.",
+					isCorrect: true,
+				},
+			],
+		},
+		{
+			content: "Qual dos veículos tem prioridade de passagem nesta situação?",
+			image:
+				"https://i.ibb.co/bNWjVMc/hd-7211562727e62353119e1778efb6ad5c-65d7679b2387b.png",
+			options: [
+				{ content: "O veículo vermelho.", isCorrect: false },
+				{ content: "O veículo amarelo.", isCorrect: true },
+				{ content: "O primeiro que chegar ao cruzamento.", isCorrect: false },
+			],
+			explanation: "",
+		},
+		{
+			content: "Quando os peões transitem na faixa de rodagem, devem fazê-lo…",
+			image:
+				"https://i.ibb.co/qBSPVGD/hd-4afbf9651f3399182e70a8df43252943-65d766a6b987d.png",
+			options: [
+				{
+					content: "A par, quando transitem desde o anoitecer ao amanhecer.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Numa única fila, sempre que as condições de visibilidade ou a intensidade do trânsito o aconselhem.",
+					isCorrect: true,
+				},
+				{
+					content:
+						"Pela esquerda da faixa de rodagem, em relação ao seu sentido de marcha.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"A par, quando transitem em condições de visibilidade insuficiente.",
+					isCorrect: false,
+				},
+			],
+			explanation: "",
+		},
+		{
+			content: "Os condutores com pouco tempo de condução (inexperientes):",
+			image:
+				"https://i.ibb.co/JvgFsGs/hd-e1b248c4a6e211ef538de4e339bc5050-65d76696b666d.png",
+			options: [
+				{
+					content:
+						"Têm capacidades menos eficientes na recolha de informações.",
+					isCorrect: true,
+				},
+				{
+					content: "Têm capacidades mais eficientes na recolha de informações.",
+					isCorrect: false,
+				},
+				{
+					content: "Têm capacidades mais acertadas na recolha de informações.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"As capacidades na recolha da informação não têm relação com a experiência, sim com a visão.",
+					isCorrect: false,
+				},
+			],
+			explanation: "",
+		},
+		{
+			content:
+				"Para praticar uma condução defensiva, a antecipação é um comportamento importante.",
+			image:
+				"https://i.ibb.co/g9d98rL/hd-82c7ea9858a826598c341a944329f4b1-65d767c54a5c6.png",
+			options: [
+				{ content: "Errado", isCorrect: false },
+				{ content: "Só nas passagens para peões.", isCorrect: false },
+				{ content: "Certo", isCorrect: true },
+				{ content: "Não é importante", isCorrect: false },
+			],
+			explanation: "",
+		},
+		{
+			content:
+				'A Condução Defensiva deve ser mais "pró-activa", isto significa que:',
+			image:
+				"https://i.ibb.co/DPdVYdP/hd-a9ff28225ecb8c3ccbd9c8163afecfed-65d766606a3e1.png",
+			options: [
+				{
+					content:
+						"Deve adivinhar as situações de perigo e concentrar-se em aproximar-se o mais possível da berma para se proteger.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Deve estar atento aos ruídos estranhos dos veículos no trânsito e sinalizar.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Deve prever as situações antes de acontecerem e, mesmo que não aconteçam, prever a probabilidade de que aconteçam.",
+					isCorrect: true,
+				},
+				{
+					content:
+						"Deve ser mais rápida e ativa para sair rapidamente das zonas de perigo.",
+					isCorrect: false,
+				},
+			],
+			explanation: "",
+		},
+		{
+			content: "Nos dias quentes, é recomendável…",
+			image:
+				"https://i.ibb.co/qBSPVGD/hd-4afbf9651f3399182e70a8df43252943-65d766a6b987d.png",
+			options: [
+				{
+					content:
+						"Efetuar mais descansos durante uma viagem, porque a fadiga e o sono aparecem mais facilmente.",
+					isCorrect: true,
+				},
+				{
+					content:
+						"Fazer menos descansos durante a viagem, para chegar ao destino o mais rapidamente possível.",
+					isCorrect: false,
+				},
+				{
+					content: "Evitar conduzir com o ar condicionado ligado.",
+					isCorrect: false,
+				},
+				{
+					content: "Evitar tomar bebidas como água ou sumos naturais.",
+					isCorrect: false,
+				},
+			],
+			explanation: "",
+		},
+		{
+			content: "Quando o condutor tem uma distração…",
+			image:
+				"https://i.ibb.co/ZMj5Bg9/hd-81ea10c26f54aee858a78c15fe1d4dcc-65d765efa82f5.png",
+			options: [
+				{
+					content: "aumenta inconscientemente a velocidade do veículo",
+					isCorrect: false,
+				},
+				{ content: "deve avisar com as luzes de perigo", isCorrect: false },
+				{ content: "demora mais tempo em reagir", isCorrect: true },
+				{
+					content:
+						"demora menos tempo em obter as informações necessárias para conduzir com segurança",
+					isCorrect: false,
+				},
+			],
+			explanation: "",
+		},
+		{
+			content:
+				"Quando existe dificuldade na recolha de informação, a velocidade:",
+			image:
+				"https://i.ibb.co/8MqrkZS/hd-8d0e6833a4e1d761345196817b9d919c-65dc9d7020795.png",
+			options: [
+				{ content: "Deve diminuir.", isCorrect: true },
+				{ content: "Deve aumentar.", isCorrect: false },
+				{
+					content:
+						"Deve manter-se, desde que as luzes do veículo estejam ligadas.",
+					isCorrect: false,
+				},
+			],
+			explanation: "",
+		},
+		{
+			content: "Se perceber o princípio de um incêndio:",
+			image:
+				"https://i.ibb.co/mHrJ97j/hd-188cc35f026d4e711f91b6baa5594789-65dc86d6e7f4d.png",
+			options: [
+				{
+					content:
+						"Actue de imediato, desligando o motor do veículo e utilizando um extintor.",
+					isCorrect: true,
+				},
+				{
+					content:
+						"Actue de imediato, desligando as luzes do veículo e utilizando um extintor.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Actue de imediato, desligando o ar condicionado do veículo e utilizando um extintor.",
+					isCorrect: false,
+				},
+			],
+			explanation: "",
+		},
+		{
+			content: "O que deve ser ajustado antes de iniciar a marcha?",
+			image:
+				"https://i.ibb.co/5s8JMz2/hd-6d3545b3d2db8cdbadc16b272312b16c-65dc9ce76872d.png",
+			options: [
+				{ content: "De forma folgada o cinto de segurança.", isCorrect: false },
+				{
+					content:
+						"A distância do assento aos pedais, a inclinação das costas do banco e o encosto de cabeça.",
+					isCorrect: true,
+				},
+				{
+					content: "O encosto de cabeça e o cinto de segurança.",
+					isCorrect: false,
+				},
+			],
+			explanation: "",
+		},
+		{
+			content: "Quais são os efeitos mais comuns da fadiga ao volante?",
+			image:
+				"https://i.ibb.co/tCcgxpq/hd-0fcbacf5df369cf6d80c5bb0bf56b369-65dc882c1be5a.png",
+			options: [
+				{
+					content:
+						"Sentir fome e sede o que provoca a necessidade de se deslocar com maior velocidade para chegar mais rápido ao seu destino.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"A dificuldade em manter o veículo dentro dos limites da faixa de rodagem.",
+					isCorrect: true,
+				},
+				{
+					content: "Sentir-se enérgico podendo controlar melhor o veículo.",
+					isCorrect: false,
+				},
+			],
+			explanation: "",
+		},
 	];
 }

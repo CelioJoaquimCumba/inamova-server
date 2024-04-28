@@ -2904,7 +2904,7 @@ async function main() {
 		},
 		{
 			content:
-				"O uso do cinto de segurança nos assentos traseiros... (img: https://i.ibb.co/9ZPRWMW/image-11-new.png)",
+				"O uso do cinto de segurança nos assentos traseiros...",
 			image: "https://i.ibb.co/9ZPRWMW/image-11-new.png",
 			explanation:
 				"Podem salvar a vida aos seus ocupantes e impedem que eles causem lesões graves aos outros passageiros.",
@@ -2928,7 +2928,7 @@ async function main() {
 		},
 		{
 			content:
-				"O condutor que pretenda mudar de direção para a esquerda deve: (img: https://i.ibb.co/ZXhHgM4/image-12-new.png)",
+				"O condutor que pretenda mudar de direção para a esquerda deve:",
 			image: "https://i.ibb.co/ZXhHgM4/image-12-new.png",
 			explanation:
 				"Aproximar-se, com a necessária antecedência, da margem esquerda da faixa de rodagem e efetuar a manobra no trajecto mais curto.",
@@ -2957,7 +2957,7 @@ async function main() {
 		},
 		{
 			content:
-				"O que indica o sinal? (img: https://i.ibb.co/VNcHmh4/image-13-new.png)",
+				"O que indica o sinal?",
 			image: "https://i.ibb.co/VNcHmh4/image-13-new.png",
 			explanation:
 				"Trânsito proibido a veículos automóveis e motociclos com carro.",
@@ -2976,7 +2976,7 @@ async function main() {
 		},
 		{
 			content:
-				"O que indica o sinal de interesse turístico? (img: https://i.ibb.co/4YZyFRC/image-14-new.png)",
+				"O que indica o sinal de interesse turístico?",
 			image: "https://i.ibb.co/4YZyFRC/image-14-new.png",
 			explanation: "Reserva florestal.",
 			options: [
@@ -2987,7 +2987,7 @@ async function main() {
 		},
 		{
 			content:
-				"A definição de parque de estacionamento é: (img: https://i.ibb.co/kQW7n2p/image-15-new.png)",
+				"A definição de parque de estacionamento é:",
 			image: "https://i.ibb.co/kQW7n2p/image-15-new.png",
 			explanation:
 				"Local exclusivamente destinado ao estacionamento de veículos.",
@@ -3015,7 +3015,7 @@ async function main() {
 		},
 		{
 			content:
-				"Existe algum truque para conseguir eliminar o álcool do corpo do condutor, de uma forma mais rápida? (img: https://i.ibb.co/6HC1TRM/image-16-new.png)",
+				"Existe algum truque para conseguir eliminar o álcool do corpo do condutor, de uma forma mais rápida?",
 			image: "https://i.ibb.co/6HC1TRM/image-16-new.png",
 			explanation: "Não.",
 			options: [
@@ -3031,7 +3031,7 @@ async function main() {
 		},
 		{
 			content:
-				"O significado deste sinal é: (img: https://i.ibb.co/prwSwqs/image-17-new.png)",
+				"O significado deste sinal é:",
 			image: "https://i.ibb.co/prwSwqs/image-17-new.png",
 			explanation: "Entroncamento agudo para a esquerda.",
 			options: [
@@ -3049,7 +3049,7 @@ async function main() {
 		},
 		{
 			content:
-				"A capacidade de o condutor prever e antecipar aumenta: (img: https://i.ibb.co/PrkJBdy/image-18-new.png)",
+				"A capacidade de o condutor prever e antecipar aumenta:",
 			image: "https://i.ibb.co/PrkJBdy/image-18-new.png",
 			explanation: "Com a experiência.",
 			options: [
@@ -3061,7 +3061,7 @@ async function main() {
 		},
 		{
 			content:
-				"Exceto o disposto em regulamentos locais e em caso de manifesta necessidade: (img: https://i.ibb.co/9hV5bLR/image-19-new.png)",
+				"Exceto o disposto em regulamentos locais e em caso de manifesta necessidade:",
 			image: "https://i.ibb.co/9hV5bLR/image-19-new.png",
 			explanation:
 				"Pode utilizar-se o lado direito da faixa de rodagem para ultrapassar ou mudar de direção.",
@@ -3090,7 +3090,7 @@ async function main() {
 		},
 		{
 			content:
-				"O que indica o sinal? (img: https://i.ibb.co/d289vSz/image-20-new.png)",
+				"O que indica o sinal?",
 			image: "https://i.ibb.co/d289vSz/image-20-new.png",
 			explanation: "Ponte estreita.",
 			options: [
@@ -3101,7 +3101,7 @@ async function main() {
 		},
 		{
 			content:
-				"Em épocas de nevoeiro (cacimba), deve manter: (img: https://i.ibb.co/ZmJ3BX2/image-22-new.png)",
+				"Em épocas de nevoeiro",
 			image: "https://i.ibb.co/ZmJ3BX2/image-22-new.png",
 			explanation:
 				"As escovas limpa-vidros funcionais, água no depósito do limpa pára-brisas e o aquecimento ou o ar condicionado a ventilar contra o pára-brisas.",
@@ -3150,43 +3150,6 @@ async function main() {
 				{ content: "Acesso ou passagem interdito", isCorrect: false },
 				{ content: "Acesso ou passagem autorizado", isCorrect: true },
 				{ content: "Acesso ou passagem condicionado", isCorrect: false },
-			],
-			explanation: "",
-		},
-		{
-			content:
-				"Os automóveis ligeiros de passageiros devem estar equipados com sinais de pré-sinalização de perigo?",
-			image:
-				"https://i.ibb.co/smGDcP0/hd-e72ee2f0b0cc0272fd9ba7342911f64e-65d76885d680c.png",
-			options: [
-				{
-					content:
-						"Sim, um colete refletor e um triângulo de pré-sinalização de perigo",
-					isCorrect: false,
-				},
-				{ content: "Não", isCorrect: false },
-				{
-					content:
-						"Sim, dois triângulos de pré-sinalização de perigo e um colete refletor",
-					isCorrect: true,
-				},
-				{
-					content:
-						"Sim, apenas são obrigatórios dois triângulos de pré-sinalização de perigo",
-					isCorrect: false,
-				},
-			],
-			explanation: "",
-		},
-		{
-			content: "A condução urbana caracteriza-se essencialmente por:",
-			image:
-				"https://i.ibb.co/x34wP06/hd-2aabb5443b1d78d0b71b1c42deeb118d-65d767dced206.png",
-			options: [
-				{ content: "Pela abundância de sinais luminosos.", isCorrect: false },
-				{ content: "Por uma grande intensidade de trânsito.", isCorrect: true },
-				{ content: "Pela ausência de regras de trânsito.", isCorrect: false },
-				{ content: "Pela pouca presença de peões.", isCorrect: false },
 			],
 			explanation: "",
 		},
@@ -3420,25 +3383,6 @@ async function main() {
 			explanation: "",
 		},
 		{
-			content: "Quando o condutor tem uma distração…",
-			image:
-				"https://i.ibb.co/ZMj5Bg9/hd-81ea10c26f54aee858a78c15fe1d4dcc-65d765efa82f5.png",
-			options: [
-				{
-					content: "aumenta inconscientemente a velocidade do veículo",
-					isCorrect: false,
-				},
-				{ content: "deve avisar com as luzes de perigo", isCorrect: false },
-				{ content: "demora mais tempo em reagir", isCorrect: true },
-				{
-					content:
-						"demora menos tempo em obter as informações necessárias para conduzir com segurança",
-					isCorrect: false,
-				},
-			],
-			explanation: "",
-		},
-		{
 			content: "O que indica o sinal?",
 			image:
 				"https://i.ibb.co/L5QrDHD/hd-233c27c41de336d4441933ccdf4a5672-65d765c33fdeb.png",
@@ -3494,22 +3438,6 @@ async function main() {
 				},
 				{ content: "Parque de estacionamento para táxis.", isCorrect: false },
 				{ content: "Área reservada para táxis.", isCorrect: true },
-			],
-			explanation: "",
-		},
-		{
-			content:
-				"Quando existe dificuldade na recolha de informação, a velocidade:",
-			image:
-				"https://i.ibb.co/8MqrkZS/hd-8d0e6833a4e1d761345196817b9d919c-65dc9d7020795.png",
-			options: [
-				{ content: "Deve diminuir.", isCorrect: true },
-				{ content: "Deve aumentar.", isCorrect: false },
-				{
-					content:
-						"Deve manter-se, desde que as luzes do veículo estejam ligadas.",
-					isCorrect: false,
-				},
 			],
 			explanation: "",
 		},
@@ -4213,28 +4141,6 @@ async function main() {
 					content:
 						"Os condutores de dois veículos, que transitem na mesma via e em sentidos opostos, passem um pelo outro em simultâneo.",
 					isCorrect: true,
-				},
-			],
-			explanation: "",
-		},
-		{
-			content: "Quais são os efeitos mais comuns da fadiga ao volante?",
-			image:
-				"https://i.ibb.co/SB4BZMf/hd-d935c294019679ee119313458cec95b8-65dda283552a1.png",
-			options: [
-				{
-					content:
-						"Sentir fome e sede o que provoca a necessidade de se deslocar com maior velocidade para chegar mais rápido ao seu destino.",
-					isCorrect: true,
-				},
-				{
-					content: "A dificuldade em manter a atenção focada na estrada.",
-					isCorrect: false,
-				},
-				{ content: "A diminuição da capacidade de reação.", isCorrect: false },
-				{
-					content: "A diminuição da capacidade de tomar decisões rápidas.",
-					isCorrect: false,
 				},
 			],
 			explanation: "",
@@ -5527,24 +5433,6 @@ async function main() {
 			explanation: "",
 		},
 		{
-			content:
-				"Num veículo equipado com motor Diesel em aceleração, a libertação de muito fumo negro pelo tubo de escape significa:",
-			image: "https://i.ibb.co/g9dfXDQ/Screenshot-2024-03-01-165442-new.png",
-			options: [
-				{
-					content: "Necessidade de regulação da bomba injetora.",
-					isCorrect: true,
-				},
-				{ content: "Ótima qualidade do combustível.", isCorrect: false },
-				{
-					content: "Que o veículo está a queimar muito óleo.",
-					isCorrect: false,
-				},
-				{ content: "Que o veículo acelera bem.", isCorrect: false },
-			],
-			explanation: "",
-		},
-		{
 			content: "Para combater a fadiga e o sono, o melhor remédio é:",
 			image: "https://i.ibb.co/rxRP2Rd/Screenshot-2024-03-01-165447-new.png",
 			options: [
@@ -6592,18 +6480,6 @@ async function main() {
 			explanation: "",
 		},
 		{
-			content: "O que indica o sinal de interesse turístico?",
-			image:
-				"https://i.ibb.co/x2fyvrR/Whats-App-Image-2024-02-28-at-17-new-37-14-714ef826.png",
-			options: [
-				{ content: "Posto de socorro", isCorrect: false },
-				{ content: "Hospital", isCorrect: false },
-				{ content: "Hospital com emergência médica", isCorrect: false },
-				{ content: "Hospital", isCorrect: true },
-			],
-			explanation: "",
-		},
-		{
 			content: "O que indica o sinal?",
 			image:
 				"https://i.ibb.co/020rP6j/Whats-App-Image-2024-02-28-at-17-new-37-15-5361310c.png",
@@ -7173,33 +7049,6 @@ async function main() {
 			explanation: "",
 		},
 		{
-			content: "É proibido parar ou estacionar, fora das localidades:",
-			image: "https://i.ibb.co/RvqYJZ2/IMG-20240229-122242-new.png",
-			options: [
-				{
-					content:
-						"A menos de 30 m dos cruzamentos, entroncamentos, curvas ou lombas de visibilidade reduzida",
-					isCorrect: false,
-				},
-				{
-					content:
-						"A menos de 50 m dos cruzamentos, entroncamentos, curvas ou lombas de visibilidade reduzida",
-					isCorrect: true,
-				},
-				{
-					content:
-						"A menos de 10 m dos cruzamentos, entroncamentos, curvas ou lombas de visibilidade reduzida",
-					isCorrect: false,
-				},
-				{
-					content:
-						"A menos de 20 m dos cruzamentos, entroncamentos, curvas ou lombas de visibilidade reduzida",
-					isCorrect: false,
-				},
-			],
-			explanation: "",
-		},
-		{
 			content: "Os estados de fadiga podem tornar as pessoas mais:",
 			image: "https://i.ibb.co/QDqtbYq/IMG-20240229-122601-new.png",
 			options: [
@@ -7763,35 +7612,6 @@ async function main() {
 					content:
 						"Deve ser mais rápida e activa para sair rapidamente das zonas de perigo",
 					isCorrect: false,
-				},
-			],
-			explanation: "",
-		},
-		{
-			content:
-				"Se um individuo atingir uma TAS de 1,2 g/l ás 0 horas, só por volta das:",
-			image:
-				"https://i.ibb.co/Vq4HyQG/Whats-App-Image-2024-02-28-at-17-new-37-43-38390952.png",
-			options: [
-				{
-					content:
-						"12 horas do dia seguinte é que terá eliminado completamente o álcool no seu sangue",
-					isCorrect: false,
-				},
-				{
-					content:
-						"8 horas do dia seguinte é que terá eliminado completamente o álcool no seu sangue",
-					isCorrect: false,
-				},
-				{
-					content:
-						"22 horas do dia seguinte é que terá eliminado completamente o álcool no seu sangue",
-					isCorrect: false,
-				},
-				{
-					content:
-						"4 horas do dia seguinte é que terá eliminado completamente o álcool no seu sangue, se dormir bem",
-					isCorrect: true,
 				},
 			],
 			explanation: "",
@@ -9759,28 +9579,6 @@ async function main() {
 				{
 					content: "Em pequenas quantidades não afecta o acto da condução",
 					isCorrect: false,
-				},
-			],
-			explanation: "",
-		},
-		{
-			content: "Se perceber o principio de um incêndio:",
-			image: "https://i.ibb.co/Kmt430x/IMG-20240228-224506-new.png",
-			options: [
-				{
-					content:
-						"Actue de imediato, desligando as luzes do veículo e utilizando um extintor",
-					isCorrect: false,
-				},
-				{
-					content:
-						"Actue de imediato, desligando o ar condicionado do veículo e utilizando um extintor",
-					isCorrect: false,
-				},
-				{
-					content:
-						"Actue de imediato, desligando o motor do veículo e utilizando um extintor",
-					isCorrect: true,
 				},
 			],
 			explanation: "",

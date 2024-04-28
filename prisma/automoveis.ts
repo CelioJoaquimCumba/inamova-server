@@ -385,5 +385,80 @@ async function main() {
 				},
 			],
 		},
+		{
+			content:
+				"Os automóveis ligeiros de passageiros devem estar equipados com sinais de pré-sinalização de perigo?",
+			image:
+				"https://i.ibb.co/smGDcP0/hd-e72ee2f0b0cc0272fd9ba7342911f64e-65d76885d680c.png",
+			options: [
+				{
+					content:
+						"Sim, um colete refletor e um triângulo de pré-sinalização de perigo",
+					isCorrect: false,
+				},
+				{ content: "Não", isCorrect: false },
+				{
+					content:
+						"Sim, dois triângulos de pré-sinalização de perigo e um colete refletor",
+					isCorrect: true,
+				},
+				{
+					content:
+						"Sim, apenas são obrigatórios dois triângulos de pré-sinalização de perigo",
+					isCorrect: false,
+				},
+			],
+			explanation: "",
+		},
+		{
+			content:
+				"Num veículo equipado com motor Diesel em aceleração, a libertação de muito fumo negro pelo tubo de escape significa:",
+			image:
+				"https://i.ibb.co/g9d98rL/hd-82c7ea9858a826598c341a944329f4b1-65d767c54a5c6.png",
+			options: [
+				{ content: "Óptima qualidade do combustível.", isCorrect: false },
+				{
+					content: "Necessidade de regulação da bomba injetora.",
+					isCorrect: true,
+				},
+				{
+					content: "Que o veículo está a queimar muito óleo.",
+					isCorrect: false,
+				},
+				{ content: "Que o veículo acelera bem.", isCorrect: false },
+			],
+			explanation: "",
+		},
+		{
+			content:
+				"Os automóveis ligeiros de passageiros e mistos sem reboque, fora das localidades, não devem exceder a velocidade instantânea de:",
+			image:
+				"https://i.ibb.co/1LHVY0F/hd-eafedb50d4b43c93508e6b676398cc83-65d76675c2635.png",
+			options: [
+				{ content: "80 km/h", isCorrect: false },
+				{ content: "120 km/h", isCorrect: true },
+				{ content: "100 km/h", isCorrect: false },
+				{ content: "140 km/h", isCorrect: false },
+			],
+			explanation: "",
+		},
+		{
+			content: "O que deve ser ajustado antes de iniciar a marcha?",
+			image:
+				"https://i.ibb.co/5s8JMz2/hd-6d3545b3d2db8cdbadc16b272312b16c-65dc9ce76872d.png",
+			options: [
+				{ content: "De forma folgada o cinto de segurança.", isCorrect: false },
+				{
+					content:
+						"A distância do assento aos pedais, a inclinação das costas do banco e o encosto de cabeça.",
+					isCorrect: true,
+				},
+				{
+					content: "O encosto de cabeça e o cinto de segurança.",
+					isCorrect: false,
+				},
+			],
+			explanation: "",
+		},
 	];
 }

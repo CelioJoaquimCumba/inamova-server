@@ -189,5 +189,34 @@ async function main() {
 				{ content: "80 km/h.", isCorrect: false },
 			],
 		},
+		{
+			content:
+				"Quais são os limites de velocidade para automóveis pesados de passageiros?",
+			image:
+				"https://i.ibb.co/FH2G5nW/hd-c095b332777fe9cc4daa0c39d0abd5b4-65dda2c5b0322.png",
+			options: [
+				{
+					content:
+						"Automóveis pesados de passageiros dentro das localidades 50, fora das localidades 100.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Automóveis pesados de passageiros dentro das localidades 60, fora das localidades 100.",
+					isCorrect: true,
+				},
+				{
+					content:
+						"Automóveis pesados de passageiros dentro das localidades 60, fora das localidades 120.",
+					isCorrect: false,
+				},
+				{
+					content:
+						"Automóveis pesados de passageiros dentro das localidades 50, fora das localidades 120.",
+					isCorrect: false,
+				},
+			],
+			explanation: "",
+		},
 	];
 }

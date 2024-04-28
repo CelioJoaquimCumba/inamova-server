@@ -380,7 +380,8 @@ async function main() {
 				},
 				{ content: "Sempre durante a noite.", isCorrect: false },
 			],
-		},{
+		},
+		{
 			content: "O que indica o sinal?",
 			image: "https://i.ibb.co/w7GphYD/image-46-new.jpg",
 			options: [
@@ -666,9 +667,9 @@ async function main() {
 				{ content: "Pista obrigatória para cavaleiros.", isCorrect: false },
 				{ content: "Pista obrigatória para ciclistas.", isCorrect: false },
 			],
-		},{
-			content:
-				"O que indica o sinal?",
+		},
+		{
+			content: "O que indica o sinal?",
 			image: "https://i.ibb.co/6JrxNBG/image-new.png",
 			explanation: "A presença de cancela motorizada ao centro.",
 			options: [
@@ -710,6 +711,215 @@ async function main() {
 					isCorrect: false,
 				},
 			],
+		},
+		{
+			content: "O significado deste sinal é:",
+			image: "https://i.ibb.co/K7YM5Dv/image-9-new.png",
+			explanation: "Entroncamento agudo da direita.",
+			options: [
+				{ content: "Entroncamento agudo da direita.", isCorrect: true },
+				{ content: "Fim de duas vias.", isCorrect: false },
+				{ content: "Fim de via à esquerda.", isCorrect: false },
+				{ content: "Fim de via à direita.", isCorrect: false },
+			],
+		},
+		{
+			content: "O que indica o sinal?",
+			image: "https://i.ibb.co/VNcHmh4/image-13-new.png",
+			explanation:
+				"Trânsito proibido a veículos automóveis e motociclos com carro.",
+			options: [
+				{
+					content:
+						"Trânsito proibido a veículos automóveis e motociclos com carro.",
+					isCorrect: true,
+				},
+				{
+					content: "Trânsito proibido a automóveis ligeiros de passageiros.",
+					isCorrect: false,
+				},
+				{ content: "Trânsito proibido a táxis.", isCorrect: false },
+			],
+		},
+		{
+			content: "O que indica o sinal de interesse turístico?",
+			image: "https://i.ibb.co/4YZyFRC/image-14-new.png",
+			explanation: "Reserva florestal.",
+			options: [
+				{ content: "Lugar histórico e genérico.", isCorrect: false },
+				{ content: "Reserva florestal.", isCorrect: true },
+				{ content: "Parque de campismo.", isCorrect: false },
+			],
+		},
+		{
+			content: "O significado deste sinal é:",
+			image: "https://i.ibb.co/prwSwqs/image-17-new.png",
+			explanation: "Entroncamento agudo para a esquerda.",
+			options: [
+				{
+					content: "Entroncamento divergente para a esquerda.",
+					isCorrect: false,
+				},
+				{ content: "Entroncamento agudo para a esquerda.", isCorrect: true },
+				{ content: "Entroncamento agudo para a direita.", isCorrect: false },
+				{
+					content: "Entroncamento divergente para a direita.",
+					isCorrect: false,
+				},
+			],
+		},
+		{
+			content: "O que indica o sinal?",
+			image: "https://i.ibb.co/d289vSz/image-20-new.png",
+			explanation: "Ponte estreita.",
+			options: [
+				{ content: "Passagem estreita.", isCorrect: false },
+				{ content: "Ponte estreita.", isCorrect: true },
+				{ content: "Entroncamentos sucessivos.", isCorrect: false },
+			],
+		},
+		{
+			content: "O significado deste sinal é:",
+			image:
+				"https://i.ibb.co/bN1zvXR/hd-f11a0a81c90d012a5f4dbd36a3115311-65d76910bd354.png",
+			options: [
+				{ content: "Via temporariamente interrompida", isCorrect: true },
+				{
+					content:
+						"Via temporariamente interrompida, mas pode seguir em frente",
+					isCorrect: false,
+				},
+				{ content: "Via definitivamente interrompida", isCorrect: false },
+				{
+					content: "Via temporariamente interrompida, só durante a noite",
+					isCorrect: false,
+				},
+			],
+			explanation: "",
+		},
+		{
+			content: "O sinal luminoso com a seta verde indica:",
+			image:
+				"https://i.ibb.co/C0yqGqX/hd-d5207f2e2df4d7408b34b207592e8a38-65d768fa6c589.png",
+			options: [
+				{ content: "Acesso ou passagem interdito", isCorrect: false },
+				{ content: "Acesso ou passagem autorizado", isCorrect: true },
+				{ content: "Acesso ou passagem condicionado", isCorrect: false },
+			],
+			explanation: "",
+		},
+		{
+			content: "O significado deste sinal é:",
+			image:
+				"https://i.ibb.co/6mQ5csz/hd-9b0797f0ef8d35939a3db2a99d9eea82-65d767b1ce4b2.png",
+			options: [
+				{ content: "Entroncamento agudo da esquerda.", isCorrect: true },
+				{
+					content: "Entroncamento convergente para a esquerda.",
+					isCorrect: false,
+				},
+				{ content: "Entroncamento divergente da esquerda.", isCorrect: false },
+				{ content: "Entroncamento agudo da direita.", isCorrect: false },
+			],
+			explanation: "",
+		},
+		{
+			content: "O significado deste sinal é:",
+			image:
+				"https://i.ibb.co/Q6jNsLT/hd-crop-b6a1470d2247b813224e087ab2eadf30-65d76758ba1de.png",
+			options: [
+				{ content: "Travessia de peões.", isCorrect: true },
+				{ content: "Travessia de idosos.", isCorrect: false },
+				{ content: "Travessia de crianças.", isCorrect: false },
+				{ content: "Passagem de peões.", isCorrect: false },
+			],
+			explanation: "",
+		},
+		{
+			content: "O que indica o sinal?",
+			image:
+				"https://i.ibb.co/D1z1c8K/hd-96e8e2636cef633965faede7e71f9c7e-65d7678353e07.png",
+			options: [
+				{ content: "Passagem de nível.", isCorrect: false },
+				{ content: "Sinalização luminosa em manutenção.", isCorrect: false },
+				{ content: "Sinalização luminosa.", isCorrect: true },
+			],
+			explanation: "",
+		},
+		{
+			content: "O que indica o sinal STOP 3?",
+			image:
+				"https://i.ibb.co/LR9Xn97/hd-d4d98a9cb2c6a7d9673d3b584226a6a4-65d76651dcaef.png",
+			options: [
+				{ content: "Paragem obrigatória.", isCorrect: false },
+				{ content: "Paragem obrigatória em três vias.", isCorrect: true },
+				{ content: "Paragem obrigatória a três metros.", isCorrect: false },
+				{ content: "Paragem obrigatória a três metros.", isCorrect: false },
+			],
+			explanation: "",
+		},
+		{
+			content: "O sinal de cor amarela e preta indica:",
+			image:
+				"https://i.ibb.co/s11yjFJ/hd-02a8af99f8b1d62a193739814b713e54-65d7663f18d22.png",
+			options: [
+				{ content: "Barricada", isCorrect: false },
+				{ content: "Baia indicadora de separador físico", isCorrect: false },
+				{ content: "Baia limitadora de altura", isCorrect: true },
+				{
+					content: "Trânsito proibido a velocípedes e peões",
+					isCorrect: false,
+				},
+			],
+			explanation: "",
+		},
+
+		{
+			content: "O que indica o sinal?",
+			image:
+				"https://i.ibb.co/L5QrDHD/hd-233c27c41de336d4441933ccdf4a5672-65d765c33fdeb.png",
+			options: [
+				{
+					content: "Pista obrigatória para veículos de tração manual",
+					isCorrect: false,
+				},
+				{
+					content: "Pista obrigatória para peões e velocípedes",
+					isCorrect: true,
+				},
+				{ content: "Pista obrigatória para peões", isCorrect: false },
+				{
+					content: "Trânsito proibido a velocípedes e peões",
+					isCorrect: false,
+				},
+			],
+			explanation: "",
+		},
+		{
+			content: "O significado deste sinal é:",
+			image:
+				"https://i.ibb.co/vs81zF5/hd-1c2cc28795734005e3c8dfde058dfecb-65d765ab41a8d.png",
+			options: [
+				{ content: "Fim de duas vias", isCorrect: false },
+				{ content: "Fim de via à esquerda", isCorrect: false },
+				{ content: "Entroncamento agudo da direita", isCorrect: true },
+				{ content: "Fim de via à direita", isCorrect: false },
+			],
+			explanation: "",
+		},
+		{
+			content: "O que indica o sinal de informação?",
+			image:
+				"https://i.ibb.co/NmWhL2n/hd-2c3cc015b1a7260ccaa3ed10a1fcc0e6-65dc9edf0be87.png",
+			options: [
+				{
+					content: "Início da faixa reservada para táxis do lado esquerdo.",
+					isCorrect: false,
+				},
+				{ content: "Parque de estacionamento para táxis.", isCorrect: false },
+				{ content: "Área reservada para táxis.", isCorrect: true },
+			],
+			explanation: "",
 		},
 	];
 }
